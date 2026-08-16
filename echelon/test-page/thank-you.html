@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You | Echelon Hospital</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Echelon Hospital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-[#0F0F0F] text-white min-h-screen flex items-center justify-center p-4">
+<body class="bg-[#0F0F0F] text-stone-100 flex flex-col min-h-screen justify-between antialiased">
 
-    <div class="max-w-md w-full bg-zinc-950 border border-zinc-800 p-8 rounded-3xl text-center shadow-2xl relative overflow-hidden">
-        <div class="absolute -right-24 -top-24 w-48 h-48 bg-[#E11D48]/10 rounded-full blur-2xl"></div>
-        
-        <!-- Icon -->
-        <div class="w-16 h-16 bg-rose-500/10 border border-[#E11D48]/30 text-[#E11D48] rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-        </div>
-
-        <!-- Header -->
-        <h1 class="text-2xl font-extrabold mb-3">Consultation Confirmed</h1>
-        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
-            Thank you for reaching out to Echelon Hospital. Dr. A. Sharma's patient advisor will review your pain points and call you back shortly within 15 minutes.
-        </p>
-
-        <!-- Direct Phone Backup -->
-        <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 mb-6">
-            <span class="text-xs text-zinc-500 block uppercase font-bold mb-1">Need immediate assistance?</span>
-            <a href="tel:7304660080" class="text-lg font-extrabold text-[#E11D48] hover:underline flex items-center justify-center gap-2">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                +91 7304660080
-            </a>
-        </div>
-
-        <!-- Return Button -->
-        <a href="index.html" class="inline-block bg-[#E11D48] hover:bg-rose-700 text-white font-bold py-3 px-8 rounded-lg text-sm transition transform hover:-translate-y-0.5">
-            Back to Homepage
-        </a>
-        
+  <!-- Top Header -->
+  <header class="bg-stone-950 py-6 border-b border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 text-center sm:text-left sm:px-6">
+      <span class="text-xl font-extrabold text-white">
+        ECHELON<span class="text-[#DC2626]">HOSPITAL</span>
+      </span>
     </div>
+  </header>
+
+  <!-- Thank You Content Container -->
+  <main class="flex-grow flex items-center justify-center px-4 py-16">
+    <div class="max-w-xl w-full bg-stone-900 border border-stone-800 rounded-3xl p-8 sm:p-12 text-center shadow-2xl relative overflow-hidden">
+      <!-- Top Gold Icon Ring -->
+      <div class="mx-auto w-16 h-16 rounded-full bg-[#F59E0B]/10 border border-[#F59E0B]/30 flex items-center justify-center text-3xl mb-8 text-[#F59E0B]">
+        ✓
+      </div>
+
+      <span class="text-xs font-bold text-[#F59E0B] tracking-widest uppercase block mb-3">Inquiry Received Successfully</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+        Thank You for Reaching Out!
+      </h1>
+      <p class="text-stone-300 text-sm sm:text-base leading-relaxed mb-8">
+        Our lead orthopaedic specialist coordinator has received your query and joint details. We will reach back to you on your registered mobile number within <strong class="text-[#F59E0B]">2 to 4 business hours</strong> to confirm your robotic replacement assessment slot.
+      </p>
+
+      <!-- Quick Contact Card -->
+      <div class="bg-stone-950 p-6 rounded-xl border border-stone-800 mb-8 space-y-1">
+        <p class="text-xs text-stone-400">Need Urgent Help or Directions?</p>
+        <p class="text-sm text-stone-300">Call Our Robotic Desk directly at:</p>
+        <a href="tel:7304660080" class="text-xl font-extrabold text-[#F59E0B] hover:text-[#EAB308] block transition mt-1">+91 73046 60080</a>
+      </div>
+
+      <a href="index.html" class="inline-block bg-[#DC2626] hover:bg-[#B91C1C] text-white font-bold py-3.5 px-8 rounded-lg tracking-wide transition duration-300">
+        ← Return to Main Page
+      </a>
+    </div>
+  </main>
+
+  <!-- Bottom Minimal Footer -->
+  <footer class="bg-stone-950 py-6 border-t border-stone-900 text-center">
+    <p class="text-xs text-stone-600">
+      &copy; 2026 Echelon Hospital Robotic Orthopaedic Surgery Center. Confidential & NABH Certified.
+    </p>
+  </footer>
 
 </body>
 </html>
