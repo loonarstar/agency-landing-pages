@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotic Knee Replacement | Echelon Hospital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hospital: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased">
+
+  <!-- Top Header Navigation -->
+  <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="bg-hospital-800 text-white p-2 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+        <div>
+          <span class="block text-lg font-bold tracking-tight text-hospital-900 uppercase">Echelon Hospital</span>
+          <span class="block text-xs text-slate-500 font-medium tracking-widest">ROBOTIC JOINT CARE</span>
+        </div>
+      </div>
+      <a href="tel:+919876543210" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2.5 rounded-full text-sm transition-colors duration-200 shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="=M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a20.373 20.373 0 0 1-7.186-7.186c-.155-.44.01-1.078.387-1.21l1.293-.97c.361-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3" />
+        </svg>
+        <span>+91 9876543210</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-hospital-900 via-hospital-800 to-indigo-950 text-white overflow-hidden py-10 lg:py-20">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Hero Left Text -->
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        <!-- Trust Badges Block -->
+        <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+          <span class="inline-flex items-center gap-1.5 bg-sky-500/20 text-sky-300 border border-sky-500/30 text-xs font-bold px-3 py-1.5 rounded-full">
+            <svg class="w-3.5 h-3.5 text-sky-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            NABH Accredited
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold px-3 py-1.5 rounded-full">
+            <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            5,000+ Successful Surgeries
+          </span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+          Regain Your Mobility with Advanced <span class="text-sky-400">Robotic Knee Replacement</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
+          Experience unmatched precision, customized alignment, and rapid healing. Don't let chronic arthritis restrict your lifetime of activity.
+        </p>
+
+        <!-- Quick Bullets (Desktop Only) -->
+        <div class="hidden sm:grid grid-cols-2 gap-4 pt-4 text-left max-w-xl mx-auto lg:mx-0">
+          <div class="flex items-center gap-2">
+            <div class="bg-sky-500/20 p-1.5 rounded-full">
+              <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <span class="text-sm font-semibold text-slate-200">Pain-Free Joint Alignment</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="bg-sky-500/20 p-1.5 rounded-full">
+              <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <span class="text-sm font-semibold text-slate-200">Minimally Invasive Cut</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="bg-sky-500/20 p-1.5 rounded-full">
+              <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <span class="text-sm font-semibold text-slate-200">Expert Orthopedic Board</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="bg-sky-500/20 p-1.5 rounded-full">
+              <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <span class="text-sm font-semibold text-slate-200">Complete Insurance Support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Side Above Fold (Desktop) -->
+      <div class="lg:col-span-5 w-full">
+        <div class="bg-white rounded-2xl p-6 sm:p-8 text-slate-800 shadow-2xl border border-slate-100">
+          <div class="mb-5 text-center sm:text-left">
+            <span class="text-xs font-bold text-hospital-600 uppercase tracking-widest block mb-1">BOOK CONSULTATION</span>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-950">Request Free Call Back</h3>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">Book your slots today with top orthopedic specialists.</p>
+          </div>
+
+          <!-- Form (No labels, exclusive placeholders, POST target, redirect tag) -->
+          <form action="https://formspree.io/f/meajkzgb" method="POST" class="space-y-4">
+            <input type="hidden" name="_next" value="thank-you.html" />
+            
+            <div>
+              <input type="text" name="name" required placeholder="Full Name" class="w-full px-4 py-3 border border-slate-200 rounded-lg text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-hospital-600 focus:bg-white transition-all" />
+            </div>
+
+            <div>
+              <input type="tel" name="phone" required placeholder="Phone Number" class="w-full px-4 py-3 border border-slate-200 rounded-lg text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-hospital-600 focus:bg-white transition-all" />
+            </div>
+
+            <div>
+              <input type="email" name="email" required placeholder="Email Address" class="w-full px-4 py-3 border border-slate-200 rounded-lg text-sm bg-slate-50 focus:outline-none focus:ring-2 focus:ring-hospital-600 focus:bg-white transition-all" />
+            </div>
+
+            <div>
+              <select name="knee_condition" required class="w-full px-4 py-3 border border-slate-200 rounded-lg text-sm bg-slate-50 text-slate-600 focus:outline-none focus:ring-2 focus:ring-hospital-600 focus:bg-white transition-all">
+                <option value="" disabled selected>Select Knee Condition Severity</option>
+                <option value="severe-pain">Severe Arthritis / Constant Pain</option>
+                <option value="moderate-pain">Moderate Pain / Difficulty Walking</option>
+                <option value="seeking-second-opinion">Seeking a Second Opinion</option>
+              </select>
+            </div>
+
+            <button type="submit" class="w-full bg-hospital-600 hover:bg-hospital-700 text-white font-bold py-3.5 rounded-lg text-sm tracking-wide shadow-lg hover:shadow-xl transition-all duration-150">
+              Schedule Consultation Now
+            </button>
+          </form>
+
+          <p class="text-[10px] text-center text-slate-400 mt-3.5">
+            🔒 Your details are protected under standard privacy guidelines.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Key Benefits Grid Section -->
+  <section class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-sm font-bold text-hospital-600 uppercase tracking-widest">Why Robotic Surgery?</span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2">
+          Key Benefits of Robot-Assisted Knee Procedures
+        </h2>
+        <p class="text-slate-500 mt-3 text-sm sm:text-base">
+          Advanced robotic assistance aligns custom joint implants perfectly for your knee structure, reducing errors and downtime.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Benefit 1 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center hover:shadow-lg transition-shadow duration-200">
+          <div class="w-12 h-12 bg-indigo-50 text-hospital-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mb-2">100% Computer Precision</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Pre-operative 3D modeling guarantees highly personalized implant alignment accurate down to a millimeter.
+          </p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center hover:shadow-lg transition-shadow duration-200">
+          <div class="w-12 h-12 bg-indigo-50 text-hospital-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mb-2">Minimally Invasive</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Significantly smaller incisions lead to preserved healthy bone & muscle tissue, ensuring safety.
+          </p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center hover:shadow-lg transition-shadow duration-200">
+          <div class="w-12 h-12 bg-indigo-50 text-hospital-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mb-2">24-Hour Discharge</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Due to rapid wound closure tech, many patients are discharged safely from Echelon within just 24 hours.
+          </p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center hover:shadow-lg transition-shadow duration-200">
+          <div class="w-12 h-12 bg-indigo-50 text-hospital-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mb-2">Faster Recovery</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Begin walking, climbing stairs, and resuming lightweight day-to-day work sooner than traditional approaches.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Highlight Section -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 grid grid-cols-1 lg:grid-cols-12">
+        
+        <!-- Surgeon Image / Graphic Placeholder -->
+        <div class="lg:col-span-5 relative bg-hospital-900 flex items-center justify-center min-h-[300px]">
+          <!-- Pattern Overlay -->
+          <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+          <div class="text-center text-white z-10 px-6">
+            <!-- Surgeon Bio Avatar SVG placeholder -->
+            <svg class="w-32 h-32 mx-auto text-sky-400 bg-white/10 rounded-full p-4 mb-4 border-2 border-sky-400/30" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+            </svg>
+            <h4 class="text-xl font-bold">Dr. A. Sharma</h4>
+            <p class="text-sky-300 text-sm font-medium">Chief Orthopaedic Surgeon</p>
+          </div>
+        </div>
+
+        <!-- Doctor Content -->
+        <div class="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-center space-y-6">
+          <div>
+            <span class="text-xs font-bold text-hospital-600 uppercase tracking-widest block mb-1">LEAD SURGEON PROFILE</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-950">Meet Dr. A. Sharma</h3>
+            <p class="text-sm text-hospital-600 font-semibold mt-1">20+ Years of Dedication & Robotic Orthopaedic Innovation</p>
+          </div>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Dr. A. Sharma is Echelon Hospital's pioneer in computerized robotic joint replacement surgery. Having successfully completed over thousands of total and partial knee arthroplasties, his patient care protocol revolves around cutting-edge technique paired with comprehensive pain mitigation plans.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-slate-100 pt-6">
+            <div>
+              <h5 class="text-xs font-bold text-slate-400 uppercase">SPECIALIZED AREA</h5>
+              <p class="text-sm font-bold text-slate-800 mt-1">Robotic-Assisted Knee & Hip Arthroplasty</p>
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-slate-400 uppercase">ACCREDITATIONS</h5>
+              <p class="text-sm font-bold text-slate-800 mt-1">Fellow of Joint Reconstruction & Care</p>
+            </div>
+          </div>
+
+          <div>
+            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="inline-flex items-center gap-2 bg-hospital-800 hover:bg-hospital-900 text-white font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
+              <span>Request Priority Appointment</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-sm font-bold text-hospital-600 uppercase tracking-widest">Patient Success Stories</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+          Back on Their Feet in Record Time
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Review 1 -->
+        <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl relative shadow-sm">
+          <!-- Star Rating -->
+          <div class="flex text-amber-500 gap-1 mb-4">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          </div>
+          <blockquote class="text-slate-700 text-sm sm:text-base leading-relaxed mb-6 italic">
+            "Years of agonizing pain from arthritis made simple steps impossible. Following the computer-guided surgery with Dr. Sharma, I was standing on my feet on day 2 and walked independently in just two weeks! Truly magical experience!"
+          </blockquote>
+          <div>
+            <span class="block font-bold text-slate-900">Ramesh Khurana</span>
+            <span class="block text-xs text-slate-400">62-Year-Old Retired Teacher (Total Knee Replacement)</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl relative shadow-sm">
+          <!-- Star Rating -->
+          <div class="flex text-amber-500 gap-1 mb-4">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          </div>
+          <blockquote class="text-slate-700 text-sm sm:text-base leading-relaxed mb-6 italic">
+            "I was skeptical about robotic intervention, but the recovery timeline proved me completely wrong. The minimal incision healed incredibly cleanly. Highly recommend Echelon Hospital for joint arthritis."
+          </blockquote>
+          <div>
+            <span class="block font-bold text-slate-900">Sunita Deshmukh</span>
+            <span class="block text-xs text-slate-400">58-Year-Old Entrepreneur (Partial Knee Replacement)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Mobile CTA Button (Desktop Hidden) -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 p-4 block lg:hidden shadow-lg">
+    <div class="flex gap-3">
+      <a href="tel:+919876543210" class="flex-1 inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3.5 rounded-lg text-sm transition-colors duration-150">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a20.373 20.373 0 0 1-7.186-7.186c-.155-.44.01-1.078.387-1.21l1.293-.97c.361-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"></path></svg>
+        <span>Call Hospital</span>
+      </a>
+      <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="flex-1 inline-flex items-center justify-center gap-2 bg-hospital-600 hover:bg-hospital-700 text-white font-bold py-3.5 rounded-lg text-sm transition-colors duration-150">
+        <span>Enquire Now</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 pb-24 lg:pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h4 class="text-white font-bold mb-3">Echelon Hospital</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Advanced clinical care and computerized orthopedic joint reconstruction systems designed to help arthritis patients walk comfortably again.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Quick Contacts</h4>
+          <p class="text-sm text-slate-400">
+            Call: <a href="tel:+919876543210" class="text-sky-400 hover:underline">+91 9876543210</a><br />
+            Emergency Desk: Open 24/7
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Compliance & Certification</h4>
+          <p class="text-sm text-slate-400">
+            NABH Accreditation ID: ECH-2023-RKR. Under expert supervision of orthopaedic regulatory standards.
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 pt-6 text-center text-xs">
+        <p>© 2024 Echelon Hospital. All rights reserved. Designed to help patients find reliable robotic joint surgery updates.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
