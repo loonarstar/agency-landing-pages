@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Health Medical Center | World-Class Healthcare & Diagnostics</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    /* Custom Mobile Carousel Styles */
+    @media (max-width: 768px) {
+      .services-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        padding: 10px 4px 24px 4px;
+      }
+      .services-carousel::-webkit-scrollbar {
+        height: 6px;
+      }
+      .services-carousel::-webkit-scrollbar-track {
+        background: #f1f5f9;
+        border-radius: 10px;
+      }
+      .services-carousel::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+      }
+      .service-card {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Top Trust Bar -->
+  <div class="bg-blue-900 text-white text-xs md:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <span class="flex items-center gap-2">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        Accredited Level-1 Multi-Specialty Hospital
+      </span>
+      <span class="flex items-center gap-4">
+        <a href="tel:18005550199" class="hover:underline flex items-center gap-1">
+          <i class="fa-solid fa-phone"></i> Emergency Hotline: 1-800-555-0199
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="bg-blue-600 text-white p-2.5 rounded-xl shadow-lg shadow-blue-500/20">
+          <i class="fa-solid fa-hospital text-2xl"></i>
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-slate-950 block">APEX HEALTH</span>
+          <span class="text-xs tracking-widest text-slate-500 font-semibold block uppercase">Medical Center</span>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-6">
+        <span class="text-sm text-slate-600">
+          <i class="fa-solid fa-location-dot text-blue-600 mr-1"></i> 124 Medical Plaza, New York
+        </span>
+        <a href="#appointment-form" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 shadow-md hover:shadow-lg">
+          Book Appointment
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Lead Form Section -->
+  <main class="relative overflow-hidden py-12 lg:py-20 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-950 text-white">
+    <!-- Background decorative patterns -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-700/20 via-transparent to-transparent pointer-events-none"></div>
+    <div class="absolute -left-48 -bottom-48 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Left: Sales copy -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-400/20 text-blue-300 rounded-full px-4 py-1.5 text-sm font-medium">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Accepting New Patients & Emergency Admissions
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white">
+            World-Class Care, <br class="hidden sm:inline" />
+            <span class="text-blue-400 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">Focused on Your Recovery.</span>
+          </h1>
+          
+          <p class="text-lg text-slate-300 max-w-xl leading-relaxed">
+            Ranked #1 for patient safety. Our team of world-leading medical specialists uses the latest technology to deliver precise diagnosis and compassionate therapy.
+          </p>
+
+          <!-- Fast Trust Stats -->
+          <div class="grid grid-cols-3 gap-6 pt-4 border-t border-slate-800">
+            <div>
+              <span class="block text-3xl font-extrabold text-white">150+</span>
+              <span class="block text-sm text-slate-400 mt-1">Expert Doctors</span>
+            </div>
+            <div>
+              <span class="block text-3xl font-extrabold text-white">99.8%</span>
+              <span class="block text-sm text-slate-400 mt-1">Satisfaction Rate</span>
+            </div>
+            <div>
+              <span class="block text-3xl font-extrabold text-white">15 Min</span>
+              <span class="block text-sm text-slate-400 mt-1">Average Wait</span>
+            </div>
+          </div>
+
+          <!-- Patient Trust Badge -->
+          <div class="flex items-center gap-4 bg-slate-900/40 backdrop-blur-sm p-4 rounded-xl border border-slate-800">
+            <div class="flex -space-x-2">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100" alt="Patient avatar" class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100" alt="Patient avatar" class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" alt="Patient avatar" class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover">
+            </div>
+            <div class="text-sm">
+              <div class="flex text-amber-400 gap-0.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-slate-300">Trusted by 14,000+ local families this year</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: High Converting Lead Form -->
+        <div class="lg:col-span-5" id="appointment-form">
+          <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 text-slate-900 border border-slate-100">
+            <div class="text-center mb-6">
+              <span class="text-blue-600 font-bold tracking-wider text-xs uppercase block mb-1">Fast & Easy Booking</span>
+              <h2 class="text-2xl font-bold text-slate-950">Book Your Consultation</h2>
+              <p class="text-slate-500 text-sm mt-1">Get connected with top-rated medical experts</p>
+            </div>
+
+            <form action="thank_you.html" method="GET" class="space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Your Full Name</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                    <i class="fa-regular fa-user"></i>
+                  </span>
+                  <input type="text" required name="name" placeholder="John Doe" class="w-full pl-10 pr-4 py-2.5 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Phone Number</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                      <i class="fa-solid fa-phone-flip"></i>
+                    </span>
+                    <input type="tel" required name="phone" placeholder="(555) 000-0000" class="w-full pl-10 pr-4 py-2.5 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm" />
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Email Address</label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                      <i class="fa-regular fa-envelope"></i>
+                    </span>
+                    <input type="email" required name="email" placeholder="john@example.com" class="w-full pl-10 pr-4 py-2.5 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm" />
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Select Medical Specialty</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                    <i class="fa-solid fa-stethoscope"></i>
+                  </span>
+                  <select required name="specialty" class="w-full pl-10 pr-4 py-2.5 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white appearance-none">
+                    <option value="">-- Choose a Specialty --</option>
+                    <option value="Cardiology">Cardiology & Heart Care</option>
+                    <option value="Orthopedics">Orthopedic Surgery</option>
+                    <option value="Pediatrics">Pediatrics & Child Health</option>
+                    <option value="Neurology">Neurology & Brain Care</option>
+                    <option value="Oncology">Oncology & Cancer Therapy</option>
+                    <option value="Emergency">Emergency Medicine (24/7)</option>
+                  </select>
+                  <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Preferred Date</label>
+                <input type="date" required name="date" class="w-full px-4 py-2.5 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white" />
+              </div>
+
+              <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-4 rounded-xl shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 transition-all duration-200 flex items-center justify-center gap-2 mt-2 text-base">
+                Confirm My Consultation <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+              <p class="text-[11px] text-center text-slate-500 mt-4">
+                <i class="fa-solid fa-shield-halved text-emerald-500 mr-1"></i> HIPAA Compliant Secure Server. Your health data is 100% confidential.
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Trust Icons / Accreditations -->
+  <section class="py-8 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
+        <div class="flex items-center gap-2 text-lg font-bold text-slate-700">
+          <i class="fa-solid fa-shield text-2xl text-blue-600"></i> Joint Commission Gold Seal
+        </div>
+        <div class="flex items-center gap-2 text-lg font-bold text-slate-700">
+          <i class="fa-solid fa-award text-2xl text-blue-600"></i> Top Rated US Hospital
+        </div>
+        <div class="flex items-center gap-2 text-lg font-bold text-slate-700">
+          <i class="fa-solid fa-heart-circle-check text-2xl text-blue-600"></i> HIPAA Compliant
+        </div>
+        <div class="flex items-center gap-2 text-lg font-bold text-slate-700">
+          <i class="fa-solid fa-user-shield text-2xl text-blue-600"></i> ISO 9001 Certified
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialty Services Grid/Carousel Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+        <span class="text-blue-600 font-extrabold tracking-widest text-xs uppercase block mb-2">Advanced Specialties</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
+          Our Specialized Centers of Medical Excellence
+        </h2>
+        <p class="text-slate-600 mt-4 text-base md:text-lg leading-relaxed">
+          Each center is staffed with board-certified physicians using cutting-edge medical equipment to ensure the highest standard of treatment.
+        </p>
+      </div>
+
+      <!-- Services Container -->
+      <!-- Desktop: Grid (3 in a row, 2 rows total) | Mobile: Horizontal Scroll Slider/Carousel -->
+      <div class="services-carousel md:grid md:grid-cols-3 md:gap-8">
+        
+        <!-- Card 1: Cardiology -->
+        <div class="service-card bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1">
+          <div>
+            <div class="w-14 h-14 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Cardiology & Heart Care</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              From preventative health checks to complex bypass surgeries, our cardiac center provides complete cardiac care, pacing therapies, and state-of-the-art diagnostic imaging.
+            </p>
+          </div>
+          <a href="#appointment-form" class="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 text-sm mt-auto">
+            Consult Cardiologist <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        <!-- Card 2: Orthopedics -->
+        <div class="service-card bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1">
+          <div>
+            <div class="w-14 h-14 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fa-solid fa-bone"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Orthopedic Joint & Bone</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Specializing in total hip/knee replacements, minimally invasive sports injury treatment, spine corrections, and custom recovery therapies designed to restore complete mobility.
+            </p>
+          </div>
+          <a href="#appointment-form" class="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 text-sm mt-auto">
+            Book Joint Assessment <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        <!-- Card 3: Pediatrics -->
+        <div class="service-card bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1">
+          <div>
+            <div class="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fa-solid fa-baby-carriage"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Pediatrics & Child Care</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Dedicated children's wing offering a warm environment. Our specialized pediatricians handle developmental assessments, immunizations, and urgent pediatric concerns 24/7.
+            </p>
+          </div>
+          <a href="#appointment-form" class="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 text-sm mt-auto">
+            See Pediatric Experts <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        <!-- Card 4: Neurology -->
+        <div class="service-card bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1">
+          <div>
+            <div class="w-14 h-14 bg-indigo-50 text-indigo-500 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Neurology & Neurosurgery</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Treating central nervous system conditions, chronic migraines, epilepsy, stroke emergencies, and utilizing precision stereotactic surgical methods for spine and brain health.
+            </p>
+          </div>
+          <a href="#appointment-form" class="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 text-sm mt-auto">
+            Consult Neurologist <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        <!-- Card 5: Oncology -->
+        <div class="service-card bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1">
+          <div>
+            <div class="w-14 h-14 bg-violet-50 text-violet-500 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fa-solid fa-dna"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Oncology Cancer Care</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              State-of-the-art comprehensive cancer center utilizing genetic mapping, targeted immunotherapy, minimally invasive radiation therapy, and fully customized patient wellness tracks.
+            </p>
+          </div>
+          <a href="#appointment-form" class="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 text-sm mt-auto">
+            Explore Therapy Plans <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        <!-- Card 6: Emergency -->
+        <div class="service-card bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between hover:-translate-y-1">
+          <div>
+            <div class="w-14 h-14 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+              <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">24/7 Level-1 Emergency</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Our fully trauma-equipped emergency department is prepared round-the-clock for respiratory failures, stroke signs, cardiac arrest, accidents, and absolute critical care.
+            </p>
+          </div>
+          <a href="tel:18005550199" class="inline-flex items-center gap-2 text-emerald-600 font-bold hover:text-emerald-700 text-sm mt-auto">
+            Call Trauma Desk <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Mobile Swipe Hint -->
+      <div class="flex md:hidden items-center justify-center gap-2 text-slate-400 mt-2 text-xs font-medium">
+        <i class="fa-solid fa-hand-pointer animate-bounce"></i>
+        <span>Swipe left/right to view all specialties</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Direct Call to Action Banner -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-extrabold">In Need of Urgent Medical Advice?</h2>
+        <p class="text-blue-100 mt-1 max-w-xl">Speak with our qualified nurse navigator right away. Available 24 hours a day, 365 days a year.</p>
+      </div>
+      <a href="tel:18005550199" class="bg-white hover:bg-slate-100 text-blue-900 font-extrabold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg text-center whitespace-nowrap flex items-center gap-3">
+        <i class="fa-solid fa-phone-volume text-blue-600 text-xl"></i> Call 1-800-555-0199
+      </a>
+    </div>
+  </section>
+
+  <!-- Trust Testimonial Grid -->
+  <section class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-blue-600 font-extrabold tracking-widest text-xs uppercase block mb-2">Testimonials</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
+          What Our Patients Say
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 gap-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              "The cardiology unit at Apex Health saved my husband's life. The care, response time, and expert surgeons were incredible. Post-surgery care was absolute world-class."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 border-t border-slate-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold">
+              MS
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">Margaret Stone</h4>
+              <span class="text-xs text-slate-400">Cardiology Patient Family</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 gap-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              "My son had to visit pediatric emergency at 2 AM. We were admitted in minutes, the doctor took such careful time with him, and put all of our concerns instantly at ease."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 border-t border-slate-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold">
+              DR
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">David Rivera</h4>
+              <span class="text-xs text-slate-400">Pediatric Emergency Visit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 gap-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              "I had hip replacement surgery here three months ago. I am now back to hiking without any pain at all. Truly the best joint specialists you could ask for."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 border-t border-slate-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold">
+              RL
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">Richard L.</h4>
+              <span class="text-xs text-slate-400">Orthopedic Surgery Patient</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sticky Mobile Call Button -->
+  <div class="md:hidden fixed bottom-4 right-4 z-50">
+    <a href="tel:18005550199" class="bg-emerald-500 text-white rounded-full p-4 shadow-2xl flex items-center justify-center gap-2 hover:bg-emerald-600">
+      <i class="fa-solid fa-phone-volume text-2xl"></i>
+      <span class="font-bold pr-2">Call Emergency</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="bg-blue-600 text-white p-2 rounded-lg">
+              <i class="fa-solid fa-hospital text-xl"></i>
+            </div>
+            <span class="text-lg font-bold text-white tracking-wider">APEX HEALTH</span>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+            State-of-the-art clinical excellence, personalized rehabilitation protocols, and dedicated diagnostic teams. Serving your family's health for over 25 years.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Legal Details</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline hover:text-white transition-colors">Patient Rights</a></li>
+            <li><a href="#" class="hover:underline hover:text-white transition-colors">HIPAA Policy</a></li>
+            <li><a href="#" class="hover:underline hover:text-white transition-colors">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Location</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            124 Medical Plaza Complex,<br />
+            Suite 500,<br />
+            New York, NY 10011
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <span>&copy; 2026 Apex Health Medical Center. All rights reserved.</span>
+        <span>Disclaimer: If you are experiencing a life-threatening medical situation, call 911 immediately.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
