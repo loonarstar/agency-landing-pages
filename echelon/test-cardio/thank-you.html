@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You | Echelon Hospital Cardiology</title>
+  <title>Thank You | Echelon Hospital</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script>
     tailwind.config = {
@@ -18,10 +18,13 @@
           },
           colors: {
             medical: {
+              600: '#0284c7',
+              800: '#075985',
               900: '#0c4a6e',
             },
             tealAccent: {
               500: '#0d9488',
+              600: '#0f766e',
             }
           }
         }
@@ -29,56 +32,29 @@
     }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
-
-  <!-- Sticky top placeholder structure for branding continuity -->
-  <div class="bg-medical-900 text-white text-xs py-2 px-4 border-b border-medical-800 text-center">
-    <span><i class="fa-solid fa-heart-pulse text-tealAccent-500 mr-2"></i> Priority appointment inquiry successfully registered</span>
-  </div>
-
-  <!-- Main Confirmation Card -->
-  <main class="max-w-xl mx-auto px-4 py-16 flex-grow flex items-center">
-    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100 text-center space-y-6 w-full">
-      <div class="w-20 h-20 bg-teal-50 rounded-full flex items-center justify-center text-tealAccent-500 mx-auto">
-        <i class="fa-solid fa-circle-check text-4xl"></i>
-      </div>
-      
-      <div class="space-y-2">
-        <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900">Inquiry Received!</h1>
-        <p class="text-sm text-slate-500">
-          Thank you for choosing Echelon Hospital. Your request for cardiologist evaluation has been safely recorded in our medical scheduling queue.
-        </p>
-      </div>
-
-      <div class="bg-slate-50 rounded-2xl p-4 text-left border border-slate-100">
-        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">What Happens Next?</h4>
-        <ul class="space-y-2.5 text-xs text-slate-600">
-          <li class="flex gap-2">
-            <i class="fa-solid fa-phone text-tealAccent-500 mt-0.5"></i>
-            <span>A cardiac care coordinator will call your registered phone number shortly to finalize time details.</span>
-          </li>
-          <li class="flex gap-2">
-            <i class="fa-solid fa-envelope text-tealAccent-500 mt-0.5"></i>
-            <span>An official calendar invite with doctor details will be forwarded to your email address.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="pt-4 flex flex-col sm:flex-row gap-3">
-        <a href="index.html" class="flex-1 py-3 px-5 text-sm font-semibold text-slate-700 bg-slate-100 rounded-xl hover:bg-slate-200 transition-colors">
-          <i class="fa-solid fa-house mr-1.5"></i> Return Home
-        </a>
-        <a href="tel:9966885577" class="flex-1 py-3 px-5 text-sm font-semibold text-white bg-medical-900 rounded-xl hover:bg-medical-850 transition-colors flex justify-center items-center gap-1.5">
-          <i class="fa-solid fa-phone"></i> Call 9966885577
-        </a>
-      </div>
+<body class="bg-slate-50 font-sans text-slate-800 flex items-center justify-center min-h-screen p-4">
+  <div class="max-w-lg w-full bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-100 text-center relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-medical-600 to-tealAccent-500"></div>
+    
+    <div class="w-20 h-20 bg-teal-50 text-tealAccent-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 shadow-inner">
+      <i class="fa-solid fa-check"></i>
     </div>
-  </main>
 
-  <!-- Minimal footer continuity -->
-  <footer class="bg-slate-900 text-slate-500 text-xs py-8 text-center border-t border-slate-800">
-    <p>&copy; 2026 Echelon Hospital Ltd. Cardiology Excellence Center.</p>
-  </footer>
+    <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">Appointment Request Received</h1>
+    <p class="text-slate-600 text-sm leading-relaxed mb-8">
+      Thank you for placing your trust in Echelon Hospital. Our cardiac coordination desk will contact you within 15 minutes to confirm your specialist consultation time. 
+    </p>
 
+    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 mb-8 text-left text-xs text-slate-600 space-y-2">
+      <p class="font-bold text-slate-800 flex items-center gap-1.5">
+        <i class="fa-solid fa-bell text-tealAccent-500"></i> Urgent Inquiry?
+      </p>
+      <p>For critical symptoms or emergency cardiac support, please dial our emergency desk immediately at <a href="tel:9966885577" class="text-medical-600 font-bold underline">9966885577</a>.</p>
+    </div>
+
+    <a href="index.html" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-medical-900 text-white font-bold rounded-xl hover:bg-medical-800 transition-all text-sm shadow-lg shadow-medical-900/10">
+      <i class="fa-solid fa-arrow-left text-xs"></i> Return to Homepage
+    </a>
+  </div>
 </body>
 </html>
