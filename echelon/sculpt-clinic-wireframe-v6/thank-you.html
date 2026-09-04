@@ -3,68 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Glow-Up is Locked In! | Dr. Sculpt Aesthetic Clinic</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Glow Up Initiated! | Dr. Sculpt Aesthetic Clinic</title>
+  <!-- Google Fonts: Playfair Display for headings, Plus Jakarta Sans for body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
           colors: {
             brandOrange: '#fc9526',
-            brandDark: '#121212',
-            brandLightDark: '#1c1b19',
-            brandCream: '#fcfaf6',
+            brandCream: '#fcf8f2',
+            brandDark: '#121212'
           },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            syne: ['"Syne"', 'sans-serif'],
+          boxShadow: {
+            'brutalist': '6px 6px 0px 0px #000000',
           }
         }
       }
     }
   </script>
-  <style>
-    .brutalist-border-orange {
-      border: 3px solid #fc9526;
-      box-shadow: 8px 8px 0px 0px #fc9526;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-brandLightDark font-sans text-brandCream flex items-center justify-center min-h-screen px-4">
+<body class="font-sans bg-brandCream text-brandDark min-h-screen flex flex-col justify-between overflow-x-hidden">
 
-  <div class="max-w-xl w-full bg-brandCream text-brandDark p-10 rounded-3xl brutalist-border-orange text-center space-y-8">
-    <div class="inline-block bg-brandOrange/20 text-brandOrange px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">
-      ✨ Booking Confirmed ✨
-    </div>
+  <!-- Sticky Floating Banner -->
+  <div class="bg-brandDark text-brandCream py-2.5 px-4 text-center text-xs md:text-sm font-semibold border-b-2 border-black tracking-wide">
+    🚀 Glow-Up Request Verified Successfully!
+  </div>
+
+  <!-- Main Thank You Card (GenZ Brutalist design styling) -->
+  <main class="max-w-xl mx-auto px-4 py-16 flex-grow flex flex-col justify-center items-center text-center">
     
-    <div class="space-y-4">
-      <h1 class="font-syne text-4xl sm:text-5xl font-black leading-tight text-brandDark">
-        You're officially on the list!
+    <!-- Logo -->
+    <div class="mb-8">
+      <img src="../assets/logo.png" alt="Dr. Sculpt Clinic Logo" class="h-20 w-auto bg-white p-2 border-2 border-black shadow-brutalist">
+    </div>
+
+    <!-- Neon Orange Card -->
+    <div class="bg-brandDark text-brandCream p-8 md:p-12 border-4 border-black shadow-brutalist relative">
+      <span class="absolute -top-3 -right-3 bg-brandOrange text-brandDark font-extrabold text-[11px] px-3 py-1 uppercase tracking-wider rotate-3">
+        Slay Inbound! 💅
+      </span>
+      
+      <div class="text-brandOrange text-5xl mb-6">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      
+      <h1 class="font-serif text-4xl sm:text-5xl font-black text-brandCream leading-tight mb-4">
+        Glow Up <br class="hidden sm:inline"> Initiated!
       </h1>
-      <p class="text-zinc-600 font-medium">
-        Your consultation request has successfully bypassed our gatekeepers. Our leading cosmetic coordinators will reach out on your provided WhatsApp number within 2 business hours.
+      
+      <p class="text-sm text-brandCream/80 leading-relaxed mb-8 max-w-sm mx-auto">
+        We have received your custom consultation request. Our lead clinical stylist is reviewing your details and will text or call you on WhatsApp within the next 15 minutes! No cap.
       </p>
+
+      <div class="border-t border-brandCream/15 pt-6 space-y-3">
+        <p class="text-[10px] text-brandOrange uppercase font-extrabold tracking-widest">
+          Need Instant Answers?
+        </p>
+        <p class="text-xs text-brandCream/70">
+          Give us a direct buzz to lock your preferred timing:
+        </p>
+        <a href="tel:8452994663" class="inline-flex items-center gap-2 font-black text-white hover:text-brandOrange transition-colors text-base">
+          <i class="fa-solid fa-phone-volume"></i> 8452994663
+        </a>
+      </div>
     </div>
 
-    <!-- Quick Next Steps Box -->
-    <div class="bg-zinc-100 p-6 rounded-2xl text-left border border-zinc-200 space-y-3">
-      <h4 class="font-bold font-syne text-brandDark text-sm uppercase tracking-wider text-brandOrange">What happens next?</h4>
-      <ul class="space-y-2 text-xs text-zinc-600 font-semibold">
-        <li class="flex items-center gap-2">⚡️ We'll WhatsApp or call you to lock in an exact slot.</li>
-        <li class="flex items-center gap-2">⚡️ Bring close-up photos of target areas (if you'd like a head start).</li>
-        <li class="flex items-center gap-2">⚡️ We custom map your face & hair with specialized technology!</li>
-      </ul>
-    </div>
-
-    <div class="pt-4">
-      <a href="index.html" class="inline-block w-full py-4 bg-brandDark text-brandCream font-bold rounded-xl border-2 border-brandDark shadow-[4px_4px_0px_0px_#fc9526] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#fc9526] transition-all text-center uppercase tracking-wider">
-        Back To Main Site
+    <!-- Action link back -->
+    <div class="mt-10">
+      <a href="index.html" class="bg-brandOrange text-brandDark font-extrabold px-6 py-3 border-2 border-black shadow-brutalist hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all text-xs uppercase tracking-wider">
+        <i class="fa-solid fa-arrow-left-long mr-2"></i> Back to Sculpt Clinic Website
       </a>
     </div>
-  </div>
+
+  </main>
+
+  <!-- Simple Footer -->
+  <footer class="bg-brandDark text-brandCream py-8 border-t-2 border-black text-center text-xs font-semibold text-brandCream/50">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2023 Dr. Sculpt Aesthetic Clinic. Bangalore, Karnataka.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
