@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Sculpt Aesthetic Clinic | Premium Skin, Hair &amp; Body Clinic</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sculptDark: '#2a1804',
+            sculptOrange: '#fe8e1b',
+            sculptTaupe: '#7b7965',
+            sculptLight: '#fcfbfa'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .luxury-gradient {
+      background: linear-gradient(135deg, rgba(42, 24, 4, 0.95) 0%, rgba(42, 24, 4, 0.8) 100%);
+    }
+    .luxury-border {
+      border-color: rgba(123, 121, 101, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-sculptLight text-sculptDark font-sans selection:bg-sculptOrange selection:text-white">
+
+  <!-- Top Banner -->
+  <div class="bg-sculptDark text-sculptLight text-xs tracking-widest py-2 px-4 text-center border-b border-[#7b7965]/20">
+    <span>EXPERIENCE WORLD-CLASS AESTHETICS &bull; CALL TODAY: <a href="tel:9538573888" class="text-sculptOrange hover:underline font-semibold">9538573888</a></span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b luxury-border transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center h-full py-2">
+        <img src="../assets/logo.png" alt="Dr. Sculpt Aesthetic Clinic Logo" class="h-16 w-auto object-contain" />
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-medium text-sculptDark/80">
+        <a href="#about" class="hover:text-sculptOrange transition-colors">About</a>
+        <a href="#treatments" class="hover:text-sculptOrange transition-colors">Treatments</a>
+        <a href="#why-us" class="hover:text-sculptOrange transition-colors">Why Sculpt</a>
+        <a href="#results" class="hover:text-sculptOrange transition-colors">Results</a>
+        <a href="#testimonials" class="hover:text-sculptOrange transition-colors">Reviews</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="flex items-center space-x-4">
+        <a href="tel:9538573888" class="hidden sm:inline-flex items-center text-sm font-semibold text-sculptDark hover:text-sculptOrange transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-sculptOrange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          9538573888
+        </a>
+        <a href="#book-now" class="bg-sculptDark text-white hover:bg-sculptOrange px-6 py-3 rounded-none text-xs uppercase tracking-widest font-semibold transition-all duration-300 shadow-lg">
+          Book Consultation
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-sculptDark text-white overflow-hidden min-h-[85vh] flex items-center">
+    <!-- Background decorative elements -->
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#7b7965_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="absolute right-0 bottom-0 w-1/3 h-full opacity-10 bg-[radial-gradient(circle_at_bottom_right,rgba(254,142,27,0.2),transparent_70%)]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-sculptOrange uppercase tracking-widest text-xs sm:text-sm font-semibold block">Where Science Meets Artistry</span>
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-white leading-tight">
+            Dr. Sculpt <br class="hidden sm:inline" />
+            <span class="italic font-light text-sculptLight/90">Aesthetic Clinic</span>
+          </h1>
+          <p class="text-sculptLight/80 text-base sm:text-lg max-w-xl leading-relaxed">
+            Discover world-class premium aesthetic solutions meticulously sculpted to elevate your natural beauty. Led by elite dermatological experts utilizing state-of-the-art non-surgical technology.
+          </p>
+          
+          <!-- Bullet Keynotes -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-sculptTaupe/30">
+            <div class="flex items-center space-x-3">
+              <span class="w-2 h-2 rounded-full bg-sculptOrange"></span>
+              <span class="text-sm text-sculptLight/90">Bespoke Aesthetic Planning</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="w-2 h-2 rounded-full bg-sculptOrange"></span>
+              <span class="text-sm text-sculptLight/90">US-FDA Approved Tech Only</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="w-2 h-2 rounded-full bg-sculptOrange"></span>
+              <span class="text-sm text-sculptLight/90">Elite Certified Doctors</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="w-2 h-2 rounded-full bg-sculptOrange"></span>
+              <span class="text-sm text-sculptLight/90">Highly Confidential Care</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Lead Form -->
+        <div class="lg:col-span-5" id="book-now">
+          <div class="bg-white text-sculptDark p-8 lg:p-10 shadow-2xl relative border border-sculptTaupe/20 rounded-none">
+            <div class="absolute top-0 left-0 w-full h-1.5 bg-sculptOrange"></div>
+            <h3 class="font-serif text-2xl mb-2 text-sculptDark">Request a Consultation</h3>
+            <p class="text-xs text-sculptTaupe mb-6 uppercase tracking-wider">Experience personalized, luxury care</p>
+            
+            <!-- Formspree Integration -->
+            <form action="https://formspree.io/f/meajkzgb" method="POST" class="space-y-4">
+              <!-- Hidden Redirect -->
+              <input type="hidden" name="_next" value="thank-you.html" />
+              
+              <!-- Anti-Spam (Optional standard) -->
+              <input type="text" name="_gotcha" style="display:none" />
+
+              <div>
+                <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 focus:border-sculptOrange focus:ring-1 focus:ring-sculptOrange outline-none transition-all text-sm" placeholder="Full Name *" />
+              </div>
+
+              <div>
+                <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 focus:border-sculptOrange focus:ring-1 focus:ring-sculptOrange outline-none transition-all text-sm" placeholder="Email Address *" />
+              </div>
+
+              <div>
+                <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 focus:border-sculptOrange focus:ring-1 focus:ring-sculptOrange outline-none transition-all text-sm" placeholder="Phone Number (e.g. 9538573888) *" />
+              </div>
+
+              <div>
+                <select name="service_category" required class="w-full px-4 py-3 border border-gray-300 focus:border-sculptOrange focus:ring-1 focus:ring-sculptOrange outline-none transition-all text-sm bg-white text-gray-700">
+                  <option value="" disabled selected>Select Desired Treatment</option>
+                  <option value="Skin Treatment (Anti-Aging, Glow, Scar)">Premium Skin Care</option>
+                  <option value="Hair Restoration (PRP, GFC, Transplant)">Hair Restoration</option>
+                  <option value="Body Contouring & Slimming">Body Sculpting &amp; Slimming</option>
+                  <option value="Laser Procedures">Laser Treatments</option>
+                  <option value="Other Aesthetics">General Consultation</option>
+                </select>
+              </div>
+
+              <div>
+                <textarea name="message" rows="3" class="w-full px-4 py-3 border border-gray-300 focus:border-sculptOrange focus:ring-1 focus:ring-sculptOrange outline-none transition-all text-sm" placeholder="Tell us about your aesthetic goals (optional)"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-sculptDark text-white hover:bg-sculptOrange py-4 uppercase tracking-widest text-xs font-semibold transition-colors duration-300">
+                Submit Request
+              </button>
+            </form>
+            <p class="text-[10px] text-center text-sculptTaupe mt-4">Your privacy is strictly guaranteed. We do not sell your personal information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Dr. Sculpt Aesthetic Clinic -->
+  <section id="about" class="py-20 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Text Details -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs uppercase tracking-widest text-sculptOrange font-semibold">The Art of Aesthetic Precision</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-sculptDark leading-tight">Crafting Your Ideal Self with India's Premier Aesthetic Experts</h2>
+          <p class="text-sculptDark/80 leading-relaxed">
+            At <strong>Dr. Sculpt Aesthetic Clinic</strong>, we believe every individual possesses a unique aesthetic canvas. Our philosophy is rooted in bringing out your natural beauty through minimally invasive treatments, state-of-the-art dermatological procedures, and advanced clinical technology.
+          </p>
+          <p class="text-sculptDark/80 leading-relaxed">
+            Drawing inspiration from world-class global luxury aesthetics, we customize every journey. From your initial digital skin analysis to final detailed refinement, we promise unparalleled clinical precision, comfort, and safety.
+          </p>
+          <div class="grid grid-cols-3 gap-6 pt-4">
+            <div>
+              <div class="font-serif text-3xl text-sculptOrange font-semibold">10k+</div>
+              <div class="text-xs text-sculptTaupe uppercase tracking-wider mt-1">Happy Faces</div>
+            </div>
+            <div>
+              <div class="font-serif text-3xl text-sculptOrange font-semibold">15+</div>
+              <div class="text-xs text-sculptTaupe uppercase tracking-wider mt-1">Expert Doctors</div>
+            </div>
+            <div>
+              <div class="font-serif text-3xl text-sculptOrange font-semibold">100%</div>
+              <div class="text-xs text-sculptTaupe uppercase tracking-wider mt-1">FDA Tech</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Luxury Highlight Image / Video Placeholder Box -->
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-w-4 aspect-h-5 bg-sculptDark/5 relative overflow-hidden border border-sculptTaupe/20 p-8 flex flex-col justify-between h-[420px]">
+            <div class="absolute inset-0 bg-gradient-to-t from-sculptDark/90 via-sculptDark/40 to-transparent"></div>
+            
+            <!-- Small luxury element -->
+            <div class="relative z-10 self-end">
+              <span class="text-xs uppercase tracking-widest text-sculptOrange font-bold block mb-2">Our Promise</span>
+              <h3 class="font-serif text-xl text-white italic">"Subtle enhancement. Uncompromised medical protocols. Pure sophistication."</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments Offered -->
+  <section id="treatments" class="py-20 bg-sculptLight">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-sculptOrange font-semibold">Our Specialized Offerings</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-sculptDark mt-2">Luxury Aesthetics Tailored for You</h2>
+        <div class="w-12 h-0.5 bg-sculptOrange mx-auto mt-4"></div>
+        <p class="text-sm text-sculptTaupe mt-4">Advanced non-surgical enhancements performed under elite clinical oversight.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Category 1: Skin & Anti-Aging -->
+        <div class="bg-white border luxury-border p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sculptDark/5 rounded-full flex items-center justify-center text-sculptOrange mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl text-sculptDark mb-4">Premium Skin &amp; Anti-Aging</h3>
+            <p class="text-sm text-sculptDark/70 mb-6 leading-relaxed">
+              Reverse the hand of time with custom luxury programs including HydraFacials, Laser Toning, High-End Chemical Peels, and FDA-Approved dermal solutions to revive youthful volume.
+            </p>
+            <ul class="space-y-2 text-xs text-sculptTaupe font-medium uppercase tracking-wider">
+              <li>&bull; Advanced Pigmentation Fix</li>
+              <li>&bull; Medical HydraFacial Gold</li>
+              <li>&bull; Botox &amp; Dermal Fillers</li>
+              <li>&bull; Acne Scar Laser Resurfacing</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="#book-now" class="text-xs uppercase tracking-widest text-sculptOrange font-semibold hover:underline">Inquire Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Category 2: Advanced Hair Therapy -->
+        <div class="bg-white border luxury-border p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sculptDark/5 rounded-full flex items-center justify-center text-sculptOrange mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl text-sculptDark mb-4">Clinical Hair Restoration</h3>
+            <p class="text-sm text-sculptDark/70 mb-6 leading-relaxed">
+              Fight hair thinning and hair fall with revolutionary follicle regeneration technologies designed for natural growth and robust density without invasive incisions.
+            </p>
+            <ul class="space-y-2 text-xs text-sculptTaupe font-medium uppercase tracking-wider">
+              <li>&bull; Growth Factor Concentrate (GFC)</li>
+              <li>&bull; Premium PRP Restoration</li>
+              <li>&bull; Advanced Hair Transplants</li>
+              <li>&bull; Scalp Rejuvenation Therapies</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="#book-now" class="text-xs uppercase tracking-widest text-sculptOrange font-semibold hover:underline">Inquire Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Category 3: Luxury Body Contouring -->
+        <div class="bg-white border luxury-border p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sculptDark/5 rounded-full flex items-center justify-center text-sculptOrange mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl text-sculptDark mb-4">Body Sculpting &amp; Contouring</h3>
+            <p class="text-sm text-sculptDark/70 mb-6 leading-relaxed">
+              Freeze away stubborn fat and reshape your curves with advanced clinically proven technology. Achieve safe, targeted fat loss with zero downtime.
+            </p>
+            <ul class="space-y-2 text-xs text-sculptTaupe font-medium uppercase tracking-wider">
+              <li>&bull; Non-Invasive Cryolipolysis</li>
+              <li>&bull; RF Tightening &amp; Cellulite Control</li>
+              <li>&bull; Targeted Inch Loss Programs</li>
+              <li>&bull; Precision Body Contouring</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="#book-now" class="text-xs uppercase tracking-widest text-sculptOrange font-semibold hover:underline">Inquire Details &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Why Choose Us Section -->
+  <section id="why-us" class="py-20 bg-sculptDark text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-sculptOrange font-semibold">The Dr. Sculpt Standards</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white mt-2 mb-6">Setting the Global Standard in Aesthetic Medicine</h2>
+          <p class="text-sculptLight/80 leading-relaxed mb-8">
+            At our clinical sanctuary, safety and perfection aren't just buzzwords; they represent our medical DNA. Every treatment begins with a detailed visual and digital evaluation, mapping a path tailored precisely to your anatomy, age, and wellness goals.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex space-x-4">
+              <div class="flex-shrink-0 text-sculptOrange">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg font-semibold text-white">Board Certified Dermatologists Only</h4>
+                <p class="text-sm text-sculptLight/70">All active therapeutic routines are overseen and delivered exclusively by highly qualified clinical practitioners.</p>
+              </div>
+            </div>
+
+            <div class="flex space-x-4">
+              <div class="flex-shrink-0 text-sculptOrange">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg font-semibold text-white">Pioneering Medical Protocols</h4>
+                <p class="text-sm text-sculptLight/70">We strictly avoid quick-fix trends in favor of verified scientific methodologies that protect long-term vitality.</p>
+              </div>
+            </div>
+
+            <div class="flex space-x-4">
+              <div class="flex-shrink-0 text-sculptOrange">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg font-semibold text-white">Discreet &amp; Exclusive Privacy</h4>
+                <p class="text-sm text-sculptLight/70">Enjoy peaceful treatment rooms with absolute anonymity and bespoke scheduling built for your privacy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 p-8 lg:p-12 border border-sculptTaupe/30 space-y-8 flex flex-col justify-center">
+          <h3 class="font-serif text-2xl text-sculptOrange">Client Experience Map</h3>
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <span class="font-serif text-2xl text-sculptTaupe font-bold">01</span>
+              <div>
+                <h5 class="font-medium text-white">Symptom Mapping</h5>
+                <p class="text-xs text-sculptLight/60 mt-1">A detailed clinical assessment matching current indicators with desired anatomical refinement.</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="font-serif text-2xl text-sculptTaupe font-bold">02</span>
+              <div>
+                <h5 class="font-medium text-white">Digital Plan Proposal</h5>
+                <p class="text-xs text-sculptLight/60 mt-1">A highly customized prescription charting exact timelines, procedures, and estimated recoveries.</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="font-serif text-2xl text-sculptTaupe font-bold">03</span>
+              <div>
+                <h5 class="font-medium text-white">Therapeutic Sculpting</h5>
+                <p class="text-xs text-sculptLight/60 mt-1">Seamless, non-invasive treatment sequence handled in pristine luxury suites.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-sculptOrange font-semibold">Unfiltered Client Words</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-sculptDark mt-2">Endorsed by Discerning Patrons</h2>
+        <div class="w-12 h-0.5 bg-sculptOrange mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-sculptLight border luxury-border p-8 flex flex-col justify-between">
+          <p class="text-sm text-sculptDark/80 italic leading-relaxed">
+            "The level of professionalism at Dr. Sculpt is extraordinary. I underwent their custom GFC Hair treatment and the visible improvements within 3 sessions blew me away. Worth every single penny."
+          </p>
+          <div class="mt-6">
+            <div class="font-serif font-semibold text-sculptDark">Meera R.</div>
+            <div class="text-xs text-sculptTaupe mt-1">Verified Client (Bangalore)</div>
+          </div>
+        </div>
+
+        <div class="bg-sculptLight border luxury-border p-8 flex flex-col justify-between">
+          <p class="text-sm text-sculptDark/80 italic leading-relaxed">
+            "I was terrified of doing laser procedures, but the dermatologist sat me down and explained the parameters patiently. The results on my acne pigmentation have changed my confidence completely!"
+          </p>
+          <div class="mt-6">
+            <div class="font-serif font-semibold text-sculptDark">Karthik S.</div>
+            <div class="text-xs text-sculptTaupe mt-1">Verified Client (Bangalore)</div>
+          </div>
+        </div>
+
+        <div class="bg-sculptLight border luxury-border p-8 flex flex-col justify-between">
+          <p class="text-sm text-sculptDark/80 italic leading-relaxed">
+            "Absolute premium luxury aesthetic setup. Highly professional support staff, zero waiting time, and impeccable post-op care. Highly recommend their non-surgical body sculpting programs."
+          </p>
+          <div class="mt-6">
+            <div class="font-serif font-semibold text-sculptDark">Aishwarya V.</div>
+            <div class="text-xs text-sculptTaupe mt-1">Verified Client (Bangalore)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info & Quick Form Trigger -->
+  <section class="py-12 bg-sculptLight border-t border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div class="flex flex-col items-center md:items-start">
+          <div class="text-sculptOrange mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h4 class="font-serif text-lg font-semibold text-sculptDark">Clinic Location</h4>
+          <p class="text-sm text-sculptTaupe mt-1">Dr. Sculpt Aesthetic Clinic, Premium Suite, Bangalore, Karnataka</p>
+        </div>
+
+        <div class="flex flex-col items-center md:items-start">
+          <div class="text-sculptOrange mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h4 class="font-serif text-lg font-semibold text-sculptDark">Operating Hours</h4>
+          <p class="text-sm text-sculptTaupe mt-1">Mon - Sat: 10:00 AM - 08:00 PM<br/>Sundays: By Prior Appointment Only</p>
+        </div>
+
+        <div class="flex flex-col items-center md:items-start">
+          <div class="text-sculptOrange mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <h4 class="font-serif text-lg font-semibold text-sculptDark">Contact Directly</h4>
+          <p class="text-sm text-sculptTaupe mt-1">Call: <a href="tel:9538573888" class="text-sculptOrange font-semibold hover:underline">9538573888</a><br/>Email: info@drsculptclinic.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="bg-sculptDark text-sculptLight py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between border-b border-sculptTaupe/30 pb-8">
+        <div class="mb-6 md:mb-0">
+          <img src="../assets/logo.png" alt="Dr. Sculpt Logo Footer" class="h-12 w-auto object-contain brightness-110 filter" />
+          <p class="text-xs text-sculptLight/60 mt-2 max-w-sm">Crafting timeless, non-surgical results. Led by experienced premium cosmetologists and surgeons.</p>
+        </div>
+        <div class="flex space-x-6 text-xs uppercase tracking-wider text-sculptLight/80">
+          <a href="#about" class="hover:text-sculptOrange transition-colors">About</a>
+          <a href="#treatments" class="hover:text-sculptOrange transition-colors">Treatments</a>
+          <a href="#why-us" class="hover:text-sculptOrange transition-colors">Why Us</a>
+          <a href="tel:9538573888" class="hover:text-sculptOrange transition-colors font-bold text-sculptOrange">Call: 9538573888</a>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row justify-between items-center pt-8 text-[11px] text-sculptLight/50 space-y-4 md:space-y-0">
+        <p>&copy; 2025 Dr. Sculpt Aesthetic Clinic. All rights reserved.</p>
+        <p class="text-center md:text-right max-w-lg">Disclaimer: Treatment results vary per person. All medical diagnostics, safety trials, and prescription regimes are personalized for ideal, custom safety outcomes.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
