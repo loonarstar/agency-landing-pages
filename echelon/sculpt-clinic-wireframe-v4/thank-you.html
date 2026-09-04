@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You | Dr. Sculpt Aesthetic Clinic</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        luxury: {
-                            gold: '#D4AF37',
-                            goldlight: '#F3E5AB',
-                            golddark: '#AA7C11',
-                            charcoal: '#0C0C0C',
-                            darkgray: '#151515',
-                            cream: '#F4F1EA'
-                        }
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'serif'],
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Dr. Sculpt Aesthetic Clinic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .bg-cream-light {
+      background-color: #fdfbf7;
+    }
+    .bg-cream-dark {
+      background-color: #f4f0e6;
+    }
+    .text-gold {
+      color: #fc9526;
+    }
+    .bg-gold {
+      background-color: #fc9526;
+    }
+    .border-gold {
+      border-color: #fc9526;
+    }
+    .hover-gold:hover {
+      background-color: #e3821b;
+    }
+  </style>
 </head>
-<body class="bg-luxury-charcoal text-gray-200 font-sans min-h-screen flex flex-col justify-between overflow-x-hidden">
+<body class="bg-cream-light text-[#2d2926] antialiased flex flex-col min-h-screen justify-between">
 
-    <!-- HEADER -->
-    <header class="border-b border-luxury-gold/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-center">
-            <img src="../assets/logo.png" alt="Dr. Sculpt Logo" class="h-16 w-auto object-contain" />
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="bg-cream-light border-b border-stone-200/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+      <img src="../assets/logo.png" alt="Dr. Sculpt Aesthetic Clinic" class="h-16 md:h-20 w-auto object-contain">
+      <a href="tel:8452994663" class="font-semibold text-gold hover:text-stone-800 transition-colors tracking-wider">
+        📞 Call 8452994663
+      </a>
+    </div>
+  </header>
 
-    <!-- MAIN THANK YOU BLOCK -->
-    <main class="relative py-16 flex-grow flex items-center justify-center">
-        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2000');"></div>
-        
-        <div class="relative max-w-xl mx-auto px-6 text-center z-10 space-y-8">
-            <div class="w-20 h-20 border border-luxury-gold/50 mx-auto flex items-center justify-center rounded-none bg-luxury-gold/5">
-                <span class="text-luxury-gold text-3xl font-serif">✓</span>
-            </div>
-            <div class="space-y-4">
-                <span class="text-xs uppercase tracking-widest text-luxury-gold font-semibold">Reservation Registered</span>
-                <h1 class="text-3xl sm:text-4xl font-serif text-white tracking-wide">Your Path to Refined Contours Begins Now</h1>
-                <p class="text-gray-400 font-light leading-relaxed text-sm sm:text-base">
-                    Thank you for contacting Dr. Sculpt Aesthetic Clinic. Your information has been securely transmitted. A private concierge specialist will reach out to you within 2 to 4 business hours to organize your personalized assessment.
-                </p>
-            </div>
-            <div class="p-6 bg-luxury-darkgray border border-luxury-gold/20 max-w-sm mx-auto">
-                <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">For Urgent Assistance</p>
-                <p class="text-lg font-serif text-white font-medium">Call directly: <a href="tel:8452994663" class="text-luxury-gold hover:underline">8452994663</a></p>
-            </div>
-            <div>
-                <a href="index.html" class="inline-block bg-gradient-to-r from-luxury-gold to-luxury-golddark hover:from-luxury-golddark hover:to-luxury-gold text-luxury-charcoal font-bold px-8 py-3.5 rounded-none tracking-widest uppercase text-xs transition-all duration-300 transform hover:scale-105">
-                    Return To Main Page
-                </a>
-            </div>
-        </div>
-    </main>
+  <!-- Main Thank You Card (Strictly No Label Tags) -->
+  <main class="flex-grow flex items-center justify-center px-4 py-16 bg-cream-dark/50">
+    <div class="max-w-xl w-full bg-white p-10 rounded-3xl shadow-xl border border-stone-100 text-center space-y-6">
+      <div class="w-20 h-20 bg-gold/10 text-gold rounded-full flex items-center justify-center mx-auto text-4xl">
+        ✓
+      </div>
+      <h1 class="font-serif text-3xl md:text-4xl text-stone-900">
+        Request Confirmed
+      </h1>
+      <p class="text-stone-600 leading-relaxed">
+        Thank you for choosing <strong>Dr. Sculpt Aesthetic Clinic</strong>. Your private consultation slot has been initiated. Our luxury coordinator will reach out to you shortly via phone or message to confirm schedule particulars.
+      </p>
+      <div class="pt-4 bg-cream-light p-4 rounded-xl border border-stone-200/50">
+        <p class="text-xs text-stone-500 uppercase tracking-widest font-semibold">Need urgent schedule changes?</p>
+        <p class="text-lg text-stone-900 font-bold mt-1">
+          Direct Liaison Hotline: <a href="tel:8452994663" class="text-gold underline">8452994663</a>
+        </p>
+      </div>
+      <div class="pt-4">
+        <a href="index.html" class="inline-block bg-gold hover-gold text-white font-semibold px-8 py-3.5 rounded-lg shadow transition-colors tracking-wide text-sm uppercase">
+          Back to homepage
+        </a>
+      </div>
+    </div>
+  </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-luxury-darkgray border-t border-luxury-gold/15 py-8 text-center text-xs text-gray-500">
-        <div class="max-w-7xl mx-auto px-4">
-            <p class="uppercase tracking-wider">&copy; 2025 Dr. Sculpt Clinic. 100% Secure & Confidential Medical Council standards.</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-400 py-8 border-t border-stone-900 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p>&copy; 2025 Echelon Hospital - Dr. Sculpt Aesthetic Clinic. All patient data is confidential.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
