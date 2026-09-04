@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Journey Has Begun | Dr. Sculpt Aesthetic Clinic</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#fc9526',
+            'brand-dark': '#e07e16',
+            cream: '#FAF6F0',
+            'cream-dark': '#F1E6D8',
+            charcoal: '#231F20'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-charcoal font-sans min-h-screen flex flex-col justify-between">
+
+  <!-- Top Header Banner -->
+  <header class="py-6 border-b border-cream-dark bg-white">
+    <div class="max-w-7xl mx-auto px-4 flex justify-center">
+      <img src="../assets/logo.png" alt="Dr. Sculpt Aesthetic Clinic Logo" class="h-14 w-auto object-contain" />
+    </div>
+  </header>
+
+  <!-- Main Confirmation Content -->
+  <main class="flex-grow flex items-center justify-center px-4 py-16">
+    <div class="max-w-xl w-full bg-white rounded border border-brand/20 p-8 sm:p-12 text-center shadow-xl shadow-charcoal/5 space-y-6">
+      
+      <!-- Elegant Success Check -->
+      <div class="w-16 h-16 rounded-full bg-brand/10 text-brand flex items-center justify-center mx-auto">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+        </svg>
+      </div>
+
+      <div class="space-y-2">
+        <span class="text-[10px] tracking-widest text-brand uppercase font-bold">Exclusive VIP Booking</span>
+        <h1 class="font-serif text-3xl sm:text-4xl font-medium text-charcoal">
+          Your Consultation Request Received
+        </h1>
+      </div>
+
+      <p class="text-sm text-charcoal-light leading-relaxed">
+        Thank you for choosing Dr. Sculpt Aesthetic Clinic, Bangalore. Our dedicated patient care coordinator is processing your VIP request and will contact you within the next 2 business hours to schedule your personalized medical consult with our specialist.
+      </p>
+
+      <div class="bg-cream p-4 rounded border border-cream-dark">
+        <p class="text-xs text-charcoal font-bold uppercase tracking-wider">Need Immediate Assistance?</p>
+        <p class="text-xs text-charcoal-light mt-1">Call our premium desk directly for instant scheduling confirmation:</p>
+        <a href="tel:8452994663" class="inline-block mt-2 font-serif text-lg text-brand font-bold hover:underline">
+          +91 8452994663
+        </a>
+      </div>
+
+      <div class="pt-4">
+        <a href="index.html" class="inline-flex items-center justify-center bg-charcoal hover:bg-charcoal-light text-white px-6 py-3 text-xs font-bold tracking-widest uppercase transition-all">
+          Return to Homepage
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-cream-dark py-8 border-t border-brand/20 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2024 Dr. Sculpt Aesthetic Clinic. Bangalore's Standard of Artistry.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
