@@ -1,340 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Sculpt Aesthetic Clinic | Best Modern Aesthetic Clinic in Bangalore</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Best Modern Aesthetic Clinic in Bangalore | Dr. Sculpt Clinic</title>
+  <!-- Google Fonts: Playfair Display for headings, Plus Jakarta Sans for body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
           colors: {
             brandOrange: '#fc9526',
+            brandCream: '#fcf8f2',
             brandDark: '#121212',
-            brandLightDark: '#1c1b19',
-            brandCream: '#fcfaf6',
-            brandGray: '#a3a3a3',
+            brandMutedDark: '#1e1e1e',
+            brandCard: '#faf4eb'
           },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            syne: ['"Syne"', 'sans-serif'],
+          boxShadow: {
+            'brutalist-sm': '2px 2px 0px 0px #000000',
+            'brutalist': '4px 4px 0px 0px #000000',
+            'brutalist-lg': '8px 8px 0px 0px #000000',
+            'brutalist-orange': '6px 6px 0px 0px #fc9526',
           }
         }
       }
     }
   </script>
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @keyframes marquee {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(-50%); }
-    }
-    .animate-marquee {
-      display: flex;
-      width: 200%;
-      animation: marquee 25s linear infinite;
-    }
-    .animate-marquee:hover {
-      animation-play-state: paused;
-    }
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #121212;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #fc9526;
-      border-radius: 4px;
-    }
-    .brutalist-border {
-      border: 3px solid #121212;
-      box-shadow: 6px 6px 0px 0px #121212;
-    }
-    .brutalist-border-orange {
-      border: 3px solid #fc9526;
-      box-shadow: 6px 6px 0px 0px #fc9526;
+    .text-glow {
+      text-shadow: 0 0 12px rgba(252, 149, 38, 0.2);
     }
   </style>
 </head>
-<body class="bg-brandCream font-sans text-brandDark overflow-x-hidden">
+<body class="font-sans bg-brandCream text-brandDark selection:bg-brandOrange selection:text-white overflow-x-hidden">
 
-  <!-- MAIN NAVIGATION -->
-  <header class="sticky top-0 z-50 bg-brandCream/90 backdrop-blur-md border-b-2 border-brandDark/10">
+  <!-- Sticky Floating Banner for Urgent Booking -->
+  <div class="bg-brandDark text-brandCream py-2.5 px-4 text-center text-xs md:text-sm font-semibold border-b-2 border-black tracking-wide flex items-center justify-center gap-2 overflow-hidden">
+    <span class="inline-flex items-center justify-center bg-brandOrange text-brandDark text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase animate-pulse">Slay Season ✨</span>
+    <span>Transform your skin & hair with Bangalore's top-rated aesthetic squad!</span>
+    <a href="tel:8452994663" class="underline text-brandOrange hover:text-white transition-colors duration-150 font-bold ml-1">Call: 8452994663</a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-brandCream/90 backdrop-blur-md border-b-2 border-black transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2">
-        <img src="../assets/logo.png" alt="Dr. Sculpt Aesthetic Clinic Logo" class="h-12 w-auto object-contain">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="../assets/logo.png" alt="Dr. Sculpt Aesthetic Clinic Logo" class="h-14 w-auto transform group-hover:scale-105 transition-transform duration-300">
       </a>
-      <nav class="hidden md:flex items-center gap-8 font-semibold">
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center gap-8 font-bold text-sm tracking-wide uppercase">
         <a href="#treatments" class="hover:text-brandOrange transition-colors">Treatments</a>
-        <a href="#team" class="hover:text-brandOrange transition-colors">Our Experts</a>
-        <a href="#about" class="hover:text-brandOrange transition-colors">Why Sculpt</a>
-        <a href="#testimonials" class="hover:text-brandOrange transition-colors">Glow-ups</a>
+        <a href="#why-us" class="hover:text-brandOrange transition-colors">Why Us</a>
+        <a href="#doctors" class="hover:text-brandOrange transition-colors">The Squad</a>
+        <a href="#reviews" class="hover:text-brandOrange transition-colors">Reviews</a>
       </nav>
+
+      <!-- CTA Action -->
       <div class="flex items-center gap-4">
-        <a href="tel:8452994663" class="hidden sm:flex items-center gap-2 font-bold bg-brandDark text-brandCream px-4 py-2 rounded-full border-2 border-brandDark hover:bg-brandCream hover:text-brandDark transition-all">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brandOrange" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-          <span>8452994663</span>
+        <a href="tel:8452994663" class="hidden sm:flex items-center gap-2 font-black text-brandDark hover:text-brandOrange transition-colors">
+          <div class="bg-brandOrange/20 p-2 rounded-full border border-black">
+            <i class="fa-solid fa-phone text-brandDark"></i>
+          </div>
+          <span class="text-sm tracking-wider">8452994663</span>
         </a>
-        <a href="#consultation" class="bg-brandOrange text-brandDark font-bold px-6 py-2.5 rounded-full border-2 border-brandDark shadow-[3px_3px_0px_0px_#121212] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0px_0px_#121212] transition-all">
-          Book Glow Up
+        <a href="#book" class="bg-brandOrange text-brandDark font-extrabold px-5 py-2.5 rounded-none border-2 border-black shadow-brutalist hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-brutalist-sm transition-all duration-150 text-sm tracking-wider uppercase">
+          Glow-Up Now ⚡
         </a>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION WITH INTEGRATED FORM -->
-  <section class="relative bg-brandLightDark text-brandCream pt-12 pb-24 px-4 overflow-hidden">
-    <!-- Abstract background grid or geometric aesthetic -->
-    <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#fc9526_1px,transparent_1px)] [background-size:16px_16px]"></div>
+  <!-- Hero Section -->
+  <section class="relative py-12 lg:py-20 overflow-hidden bg-brandCream border-b-4 border-black">
+    <!-- Abstract GenZ Grid BG decoration -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#000 1.5px, transparent 1.5px); background-size: 24px 24px;"></div>
     
-    <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      
-      <!-- Headline Content -->
-      <div class="lg:col-span-7 space-y-6">
-        <div class="inline-block bg-brandOrange/20 border border-brandOrange/40 text-brandOrange px-4 py-1.5 rounded-full text-sm font-extrabold uppercase tracking-widest">
-          ✨ No Filter Needed Squad
-        </div>
-        <h1 class="font-syne text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
-          Best Modern <br class="hidden sm:inline" />
-          <span class="text-brandOrange underline decoration-wavy decoration-2">Aesthetic Clinic</span> <br />
-          in Bangalore
-        </h1>
-        <p class="text-lg sm:text-xl text-zinc-300 max-w-2xl font-light leading-relaxed">
-          Tired of basic treatments? Welcome to <strong class="text-brandCream font-semibold">Dr. Sculpt</strong>. We combine cutting-edge tech, gen-z level aesthetic sensibilities, and India's top surgical minds to sculpt your ultimate look. 
-        </p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Interactive Badges -->
-        <div class="flex flex-wrap gap-3 pt-4">
-          <span class="bg-zinc-800 text-zinc-100 px-4 py-2 rounded-xl text-sm font-semibold border border-zinc-700">⚡️ Custom Hair Alchemy</span>
-          <span class="bg-zinc-800 text-zinc-100 px-4 py-2 rounded-xl text-sm font-semibold border border-zinc-700">🧪 Hyper-Custom Skin Elixirs</span>
-          <span class="bg-zinc-800 text-zinc-100 px-4 py-2 rounded-xl text-sm font-semibold border border-zinc-700">💎 Precision Sculpting</span>
-        </div>
-
-        <!-- Doctor Proof Badge -->
-        <div class="flex items-center gap-4 pt-4 border-t border-zinc-800">
-          <div class="flex -space-x-3">
-            <div class="h-12 w-12 rounded-full border-2 border-brandOrange bg-zinc-700 flex items-center justify-center font-bold text-xs">Dr.N</div>
-            <div class="h-12 w-12 rounded-full border-2 border-brandOrange bg-zinc-600 flex items-center justify-center font-bold text-xs">Dr.S</div>
-            <div class="h-12 w-12 rounded-full border-2 border-brandOrange bg-zinc-500 flex items-center justify-center font-bold text-xs">+5</div>
-          </div>
-          <div>
-            <p class="text-sm text-zinc-400 font-semibold">Led by Board-Certified Plastic Surgeons</p>
-            <p class="text-xs text-brandOrange font-bold">Academic excellence meets aesthetic artistry</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hero Lead Form (Bento Style) -->
-      <div id="consultation" class="lg:col-span-5">
-        <div class="bg-brandCream text-brandDark p-8 rounded-3xl brutalist-border-orange relative overflow-hidden">
-          <!-- Mini absolute design badge -->
-          <div class="absolute -right-4 -top-4 bg-brandOrange text-brandDark font-extrabold text-xs px-6 py-2 rotate-12 uppercase border border-black">
-            Limited Slots
+        <!-- Hero Left Info -->
+        <div class="lg:col-span-7 flex flex-col justify-center space-y-6 text-center lg:text-left">
+          <!-- Mini badge -->
+          <div class="inline-flex items-center gap-2 self-center lg:self-start bg-brandDark text-brandCream text-xs font-bold px-4 py-1.5 rounded-full border border-black shadow-brutalist-sm uppercase tracking-widest">
+            <span class="text-brandOrange">●</span> Rated #1 Modern Aesthetic Clinic in Bangalore
           </div>
           
-          <h3 class="font-syne text-2xl font-black mb-1">Claim Your Glow-Up</h3>
-          <p class="text-zinc-600 text-sm mb-6">Get custom recommendations from Bangalore's leading cosmetologists. Zero judgment, 100% results.</p>
+          <!-- Main Punchy Title -->
+          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-brandDark leading-tight">
+            Best Modern <br class="hidden md:inline">
+            <span class="relative inline-block">
+              Aesthetic Clinic
+              <span class="absolute bottom-1 left-0 w-full h-3 bg-brandOrange/30 -z-10 transform -rotate-1"></span>
+            </span> 
+            in Bangalore
+          </h1>
           
-          <form action="https://formspree.io/f/meajkzgb" method="POST" class="space-y-4">
-            <!-- Hidden Fields required by specification -->
-            <input type="hidden" name="_next" value="thank-you.html" />
-            <input type="hidden" name="subject" value="New Consultation Request - Sculpt Clinic v6" />
-            
-            <div>
-              <input type="text" name="name" required placeholder="Your Name / Alias *" 
-                class="w-full px-4 py-3 bg-white border-2 border-brandDark rounded-xl focus:outline-none focus:ring-2 focus:ring-brandOrange font-medium transition-all">
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <input type="tel" name="phone" required placeholder="WhatsApp Number *" 
-                  class="w-full px-4 py-3 bg-white border-2 border-brandDark rounded-xl focus:outline-none focus:ring-2 focus:ring-brandOrange font-medium transition-all">
-              </div>
-              <div>
-                <input type="email" name="email" required placeholder="Email Address *" 
-                  class="w-full px-4 py-3 bg-white border-2 border-brandDark rounded-xl focus:outline-none focus:ring-2 focus:ring-brandOrange font-medium transition-all">
-              </div>
-            </div>
-
-            <div>
-              <select name="treatment_goal" required
-                class="w-full px-4 py-3 bg-white border-2 border-brandDark rounded-xl focus:outline-none focus:ring-2 focus:ring-brandOrange font-medium transition-all">
-                <option value="" disabled selected>Choose Your Main Goal...</option>
-                <option value="Acne & Skin Revamp">Acne & Skin Revamp</option>
-                <option value="Laser Hair Free">Laser Hair Free</option>
-                <option value="Hair Restore & PRP">Hair Restore & PRP</option>
-                <option value="Facial Sculpt & Fillers">Facial Sculpt & Fillers</option>
-                <option value="Body Contouring">Body Contouring / Fat Loss</option>
-                <option value="Other / Unsure">Other / Unsure</option>
-              </select>
-            </div>
-
-            <div>
-              <textarea name="message" rows="3" placeholder="What's on your mind? Tell us what you want to fix..." 
-                class="w-full px-4 py-3 bg-white border-2 border-brandDark rounded-xl focus:outline-none focus:ring-2 focus:ring-brandOrange font-medium transition-all"></textarea>
-            </div>
-
-            <button type="submit" 
-              class="w-full py-4 bg-brandDark text-brandCream font-bold rounded-xl border-2 border-brandDark shadow-[4px_4px_0px_0px_#fc9526] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#fc9526] transition-all text-center uppercase tracking-wide">
-              Schedule Consultation Now
-            </button>
-          </form>
-          <p class="text-xs text-zinc-500 mt-4 text-center">🔒 Your info is safe with us. We respect your privacy.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- MARQUEE TICKER (Gen-Z Style) -->
-  <div class="bg-brandOrange text-brandDark font-syne py-3 border-y-4 border-brandDark overflow-hidden relative">
-    <div class="animate-marquee whitespace-nowrap flex items-center gap-12 text-lg sm:text-2xl font-black uppercase tracking-wider">
-      <span>🚀 GLOW UP IS A MINDSET</span>
-      <span>⚡️ DR. SCULPT BANGALORE</span>
-      <span>🔥 NO FILTER NEEDED</span>
-      <span>💎 PREMIUM DERMATOLOGY</span>
-      <span>🧬 NEXT-GEN HAIR REVEAL</span>
-      <span>✨ ACNE ERADICATOR</span>
-      <span>🔥 BEST COSMETOLOGIST TEAM</span>
-      <span>🚀 GLOW UP IS A MINDSET</span>
-      <span>⚡️ DR. SCULPT BANGALORE</span>
-      <span>🔥 NO FILTER NEEDED</span>
-      <span>💎 PREMIUM DERMATOLOGY</span>
-      <span>🧬 NEXT-GEN HAIR REVEAL</span>
-      <span>✨ ACNE ERADICATOR</span>
-      <span>🔥 BEST COSMETOLOGIST TEAM</span>
-    </div>
-  </div>
-
-  <!-- TREATMENTS SECTION (THE MENU) -->
-  <section id="treatments" class="py-20 px-4 max-w-7xl mx-auto">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-      <span class="text-brandOrange font-extrabold uppercase tracking-widest text-sm bg-brandOrange/10 px-4 py-1.5 rounded-full">What We Do Best</span>
-      <h2 class="font-syne text-4xl sm:text-5xl font-extrabold mt-3 text-brandDark">The Glow Up Menu</h2>
-      <p class="text-zinc-600 mt-4 text-lg">Forget outdated protocols. We use cutting-edge aesthetic science to deliver instant, lasting, and completely safe results.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      
-      <!-- Card 1: Skin Elixirs -->
-      <div class="bg-white rounded-2xl p-6 brutalist-border hover:-translate-y-2 transition-all flex flex-col justify-between">
-        <div>
-          <div class="h-12 w-12 rounded-xl bg-orange-100 flex items-center justify-center text-brandOrange font-black text-2xl mb-6">
-            🧪
-          </div>
-          <h3 class="font-syne text-2xl font-bold mb-2">Skin Alchemy</h3>
-          <p class="text-zinc-600 text-sm leading-relaxed mb-6">Ditch heavy foundation. Get glowing with Hydrafacial Luxe, Carbon Peels, Laser Toning, and bespoke chemical resurfacing.</p>
-        </div>
-        <ul class="space-y-2 text-xs font-semibold text-brandDark border-t border-zinc-100 pt-4">
-          <li class="flex items-center gap-2">⚡️ Hydrafacial MD Synergy</li>
-          <li class="flex items-center gap-2">⚡️ Carbon Laser Peel (Hollywood Glow)</li>
-          <li class="flex items-center gap-2">⚡️ Pigmentation Erasing</li>
-        </ul>
-      </div>
-
-      <!-- Card 2: Hair Alchemy -->
-      <div class="bg-white rounded-2xl p-6 brutalist-border hover:-translate-y-2 transition-all flex flex-col justify-between">
-        <div>
-          <div class="h-12 w-12 rounded-xl bg-orange-100 flex items-center justify-center text-brandOrange font-black text-2xl mb-6">
-            🧬
-          </div>
-          <h3 class="font-syne text-2xl font-bold mb-2">Hair Restoration</h3>
-          <p class="text-zinc-600 text-sm leading-relaxed mb-6">Say goodbye to thinning. Our Growth Factor Concentrates (GFC) and premium PRP methods reactivate dormant follicles instantly.</p>
-        </div>
-        <ul class="space-y-2 text-xs font-semibold text-brandDark border-t border-zinc-100 pt-4">
-          <li class="flex items-center gap-2">⚡️ Advanced GFC Therapy</li>
-          <li class="flex items-center gap-2">⚡️ High-Yield Hair Transplant</li>
-          <li class="flex items-center gap-2">⚡️ Laser Hair Regrowth</li>
-        </ul>
-      </div>
-
-      <!-- Card 3: Body Contouring -->
-      <div class="bg-white rounded-2xl p-6 brutalist-border hover:-translate-y-2 transition-all flex flex-col justify-between">
-        <div>
-          <div class="h-12 w-12 rounded-xl bg-orange-100 flex items-center justify-center text-brandOrange font-black text-2xl mb-6">
-            💪
-          </div>
-          <h3 class="font-syne text-2xl font-bold mb-2">Body Sculpting</h3>
-          <p class="text-zinc-600 text-sm leading-relaxed mb-6">Nonsurgical fat reduction and muscle definition. Freeze stubborn fat and build absolute confidence with high-end tech.</p>
-        </div>
-        <ul class="space-y-2 text-xs font-semibold text-brandDark border-t border-zinc-100 pt-4">
-          <li class="flex items-center gap-2">⚡️ Fat Freezing (Cryolysis)</li>
-          <li class="flex items-center gap-2">⚡️ High-Intensity Sculpting</li>
-          <li class="flex items-center gap-2">⚡️ Post-Weightloss Tightening</li>
-        </ul>
-      </div>
-
-      <!-- Card 4: Aesthetics & Fillers -->
-      <div class="bg-white rounded-2xl p-6 brutalist-border hover:-translate-y-2 transition-all flex flex-col justify-between">
-        <div>
-          <div class="h-12 w-12 rounded-xl bg-orange-100 flex items-center justify-center text-brandOrange font-black text-2xl mb-6">
-            💎
-          </div>
-          <h3 class="font-syne text-2xl font-bold mb-2">Injectables Luxe</h3>
-          <p class="text-zinc-600 text-sm leading-relaxed mb-6">Masterful precision. Soft contouring with premium dermal fillers and baby Botox to enhance your natural bone structure.</p>
-        </div>
-        <ul class="space-y-2 text-xs font-semibold text-brandDark border-t border-zinc-100 pt-4">
-          <li class="flex items-center gap-2">⚡️ Snatched Jawlines</li>
-          <li class="flex items-center gap-2">⚡️ Lip Filler (Plump & Natural)</li>
-          <li class="flex items-center gap-2">⚡️ Anti-Wrinkle Smoothing</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- BRUTALIST ADVANTAGE SECTION (WHY CHOOSE US) -->
-  <section id="about" class="bg-brandLightDark text-brandCream py-20 px-4 relative">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <div class="lg:col-span-5 space-y-6">
-          <span class="text-brandOrange font-extrabold uppercase tracking-widest text-sm bg-brandOrange/20 px-4 py-1.5 rounded-full">
-            Why Dr. Sculpt?
-          </span>
-          <h2 class="font-syne text-4xl sm:text-5xl font-extrabold leading-tight text-white">
-            Not Your Basic Clinic. <br />
-            We Set The Bar.
-          </h2>
-          <p class="text-zinc-400 font-light text-lg">
-            We know you are tired of sterile, scary hospital environments and cookie-cutter solutions. Dr. Sculpt was designed specifically to bridge the gap between premium academic plastic surgery and high-vibe aesthetic luxury.
+          <p class="text-lg md:text-xl text-brandDark/80 font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            No filter. No compromises. Sculpting the real you with cutting-edge medical precision, state-of-the-art tech, and an ultra-modern aesthetic vibe.
           </p>
-          <div class="pt-4">
-            <a href="#consultation" class="inline-block bg-brandOrange text-brandDark font-bold px-8 py-4 rounded-xl shadow-[4px_4px_0px_0px_#ffffff] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#ffffff] transition-all uppercase tracking-wide">
-              Get Evaluated Now
+          
+          <!-- Quick USP badges -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-2">
+            <span class="bg-white border-2 border-black px-4 py-2 font-bold text-xs uppercase shadow-brutalist flex items-center gap-1.5">
+              <i class="fa-solid fa-shield-halved text-brandOrange"></i> US-FDA Approved Tech
+            </span>
+            <span class="bg-white border-2 border-black px-4 py-2 font-bold text-xs uppercase shadow-brutalist flex items-center gap-1.5">
+              <i class="fa-solid fa-certificate text-brandOrange"></i> Expert Sculpt Squad
+            </span>
+            <span class="bg-white border-2 border-black px-4 py-2 font-bold text-xs uppercase shadow-brutalist flex items-center gap-1.5">
+              <i class="fa-solid fa-bolt text-brandOrange"></i> Zero Downtime Options
+            </span>
+          </div>
+
+          <!-- Interactive sticker banner -->
+          <div class="pt-4 hidden md:flex items-center gap-4">
+            <div class="border-2 border-dashed border-brandDark/40 p-4 rounded-xl flex items-center gap-4 bg-brandCard">
+              <div class="text-3xl">💯</div>
+              <div>
+                <h4 class="font-bold text-sm text-brandDark">Unmatched Craftsmanship</h4>
+                <p class="text-xs text-brandDark/70">Tailored transformations meticulously crafted by premium certified doctors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Right Form (The High-Converting Hook) -->
+        <div id="book" class="lg:col-span-5">
+          <div class="bg-brandDark text-brandCream p-6 sm:p-8 rounded-none border-4 border-black shadow-[8px_8px_0px_0px_#fc9526] relative">
+            <div class="absolute -top-4 -right-4 bg-brandOrange text-brandDark border-2 border-black font-extrabold px-3 py-1 text-xs uppercase transform rotate-6">
+              Glow Up Hub 🔥
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold mb-2 text-brandCream">
+              Claim Free Consult
+            </h3>
+            <p class="text-xs text-brandCream/70 uppercase tracking-widest font-bold mb-6">
+              Unlock personalized styling & premium curation
+            </p>
+            
+            <!-- Form -->
+            <form action="https://formspree.io/f/meajkzgb" method="POST" class="space-y-4">
+              <input type="hidden" name="_next" value="thank-you.html" />
+              <input type="hidden" name="Campaign" value="sculpt-clinic-wireframe-v6" />
+              
+              <div class="relative">
+                <input 
+                  type="text" 
+                  name="name" 
+                  required
+                  placeholder="Your Full Name / Aesthetic Goal-Getter"
+                  class="w-full px-4 py-3 bg-brandMutedDark border-2 border-brandCream/20 rounded-none text-brandCream placeholder-brandCream/50 focus:outline-none focus:border-brandOrange transition-all text-sm"
+                />
+              </div>
+              
+              <div class="relative">
+                <input 
+                  type="tel" 
+                  name="phone" 
+                  required
+                  placeholder="WhatsApp Number (For Direct Access)"
+                  class="w-full px-4 py-3 bg-brandMutedDark border-2 border-brandCream/20 rounded-none text-brandCream placeholder-brandCream/50 focus:outline-none focus:border-brandOrange transition-all text-sm"
+                />
+              </div>
+
+              <div class="relative">
+                <select 
+                  name="treatment"
+                  required
+                  class="w-full px-4 py-3 bg-brandMutedDark border-2 border-brandCream/20 rounded-none text-brandCream focus:outline-none focus:border-brandOrange transition-all text-sm appearance-none"
+                >
+                  <option value="" disabled selected class="text-brandCream/50">Select Treatment Interest</option>
+                  <option value="Hair Restoration / FUE">Hair Restoration & Transplant</option>
+                  <option value="Anti-Acne / Laser Peels">Anti-Acne & Carbon Peels</option>
+                  <option value="Botox / Fillers / Botox Lip">Anti-Aging & Injectables</option>
+                  <option value="Skin Whitening & Hydra Glow">Skin Brightening & Hydrafacial</option>
+                  <option value="Body Contouring">Body Contouring / Sculpting</option>
+                  <option value="Other / Expert Advice">General Cosmetology Consult</option>
+                </select>
+              </div>
+
+              <div class="relative">
+                <textarea 
+                  name="message"
+                  rows="3"
+                  placeholder="Tell us your aesthetic dream... (Optional)"
+                  class="w-full px-4 py-2.5 bg-brandMutedDark border-2 border-brandCream/20 rounded-none text-brandCream placeholder-brandCream/50 focus:outline-none focus:border-brandOrange transition-all text-sm"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit" 
+                class="w-full py-4 bg-brandOrange hover:bg-brandCream hover:text-brandDark text-brandDark font-extrabold rounded-none border-2 border-black shadow-brutalist hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-150 uppercase tracking-wider text-sm"
+              >
+                Book Slot Instantly ⚡
+              </button>
+
+              <p class="text-[10px] text-center text-brandCream/50 pt-2">
+                🛡️ Secure & private. We never spam. Your aesthetic goals are safe with us.
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Stat Bar -->
+  <section class="bg-brandOrange border-b-4 border-black py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-brandDark">15,000+</h3>
+          <p class="text-xs uppercase font-extrabold text-brandDark/80 tracking-wider">Skins Gloriously Transformed</p>
+        </div>
+        <div>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-brandDark">99.4%</h3>
+          <p class="text-xs uppercase font-extrabold text-brandDark/80 tracking-wider">Client Satisfaction Rate</p>
+        </div>
+        <div>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-brandDark">10+ Yrs</h3>
+          <p class="text-xs uppercase font-extrabold text-brandDark/80 tracking-wider">Average Doctor Experience</p>
+        </div>
+        <div>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-brandDark">Top 5</h3>
+          <p class="text-xs uppercase font-extrabold text-brandDark/80 tracking-wider">Aesthetic Clinic in Bangalore</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Treatments Section -->
+  <section id="treatments" class="py-16 md:py-24 bg-white border-b-4 border-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brandOrange font-extrabold uppercase text-xs tracking-widest bg-brandDark text-brandCream px-4 py-1.5 rounded-full inline-block mb-3 border border-black shadow-brutalist-sm">Our Top Menu</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-black text-brandDark">
+          High-Precision Slay Treatments
+        </h2>
+        <p class="text-brandDark/70 mt-3 font-semibold">
+          We use world-class, FDA-approved lasers & advanced technology designed for ultimate perfection.
+        </p>
+      </div>
+
+      <!-- Treatment Cards Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Hair Transplant -->
+        <div class="bg-brandCream border-2 border-black shadow-brutalist hover:shadow-brutalist-orange transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <!-- Image Frame -->
+            <div class="relative h-48 bg-gray-200 border-b-2 border-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1622313762448-02483a650c38?auto=format&fit=crop&q=80&w=600" alt="Hair Transplant Concept" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              <span class="absolute top-3 right-3 bg-brandDark text-brandCream border border-black text-[10px] font-extrabold px-3 py-1 uppercase tracking-wider">
+                FUE / Advanced Giga-grafts
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-black text-brandDark mb-3">Hair Restoration</h3>
+              <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+                Permanent, dense, and natural-looking hair transplants utilizing state-of-the-art FUE techniques with ultra-precision density mapping.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#book" class="inline-flex items-center gap-2 font-extrabold text-sm text-brandDark hover:text-brandOrange transition-colors">
+              Explore Treatment <i class="fa-solid fa-arrow-right-long text-brandOrange"></i>
             </a>
           </div>
         </div>
 
-        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <!-- Benefit 1 -->
-          <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl space-y-3">
-            <div class="text-brandOrange text-3xl font-extrabold">01</div>
-            <h4 class="text-xl font-bold font-syne text-white">Board-Certified Team</h4>
-            <p class="text-sm text-zinc-400">Led by Dr. Naveen Somia and elite cosmetic doctors trained globally. Academic rigor meets fine-tuned aesthetic eyes.</p>
+        <!-- Card 2: Botox & Advanced Fillers -->
+        <div class="bg-brandCream border-2 border-black shadow-brutalist hover:shadow-brutalist-orange transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <!-- Image Frame -->
+            <div class="relative h-48 bg-gray-200 border-b-2 border-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600" alt="Dermatologist Treatment Concept" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              <span class="absolute top-3 right-3 bg-brandDark text-brandCream border border-black text-[10px] font-extrabold px-3 py-1 uppercase tracking-wider">
+                Premium Injectables
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-black text-brandDark mb-3">Anti-Aging, Botox & Fillers</h3>
+              <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+                Melt away wrinkles and plump up your beauty with contouring injectables. Crafted by senior hands to highlight your authentic structural profile.
+              </p>
+            </div>
           </div>
-          <!-- Benefit 2 -->
-          <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl space-y-3">
-            <div class="text-brandOrange text-3xl font-extrabold">02</div>
-            <h4 class="text-xl font-bold font-syne text-white">Gen-Z Technology</h4>
-            <p class="text-sm text-zinc-400">No outdated lasers or harsh peels. We source the exact same US-FDA cleared machinery used in Beverly Hills and Seoul clinics.</p>
+          <div class="p-6 pt-0">
+            <a href="#book" class="inline-flex items-center gap-2 font-extrabold text-sm text-brandDark hover:text-brandOrange transition-colors">
+              Explore Treatment <i class="fa-solid fa-arrow-right-long text-brandOrange"></i>
+            </a>
           </div>
-          <!-- Benefit 3 -->
-          <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl space-y-3">
-            <div class="text-brandOrange text-3xl font-extrabold">03</div>
-            <h4 class="text-xl font-bold font-syne text-white">Hyper-Personalized</h4>
-            <p class="text-sm text-zinc-400">No generic packages. We map your skin profile, genetics, and lifestyle to cook up the ultimate glow-up blueprint.</p>
+        </div>
+
+        <!-- Card 3: Hydra Glow Skin Therapy -->
+        <div class="bg-brandCream border-2 border-black shadow-brutalist hover:shadow-brutalist-orange transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <!-- Image Frame -->
+            <div class="relative h-48 bg-gray-200 border-b-2 border-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600" alt="Hydrafacial Glow Concept" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              <span class="absolute top-3 right-3 bg-brandDark text-brandCream border border-black text-[10px] font-extrabold px-3 py-1 uppercase tracking-wider">
+                Ultra Glow 🌟
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-black text-brandDark mb-3">Hydra-Luxe Glow Therapy</h3>
+              <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+                6 stages of skin-pampering luxury. Power exfoliates, deep extracts debris, and hydrates your skin barrier with clinical multi-vitamins.
+              </p>
+            </div>
           </div>
-          <!-- Benefit 4 -->
-          <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl space-y-3">
-            <div class="text-brandOrange text-3xl font-extrabold">04</div>
-            <h4 class="text-xl font-bold font-syne text-white">Absolute Transparency</h4>
-            <p class="text-sm text-zinc-400">No hidden charges or over-selling. We only recommend treatments you actually need to hit your aesthetic vision.</p>
+          <div class="p-6 pt-0">
+            <a href="#book" class="inline-flex items-center gap-2 font-extrabold text-sm text-brandDark hover:text-brandOrange transition-colors">
+              Explore Treatment <i class="fa-solid fa-arrow-right-long text-brandOrange"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Laser Hair Reduction -->
+        <div class="bg-brandCream border-2 border-black shadow-brutalist hover:shadow-brutalist-orange transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <!-- Image Frame -->
+            <div class="relative h-48 bg-gray-200 border-b-2 border-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600" alt="Laser Hair Reduction Concept" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              <span class="absolute top-3 right-3 bg-brandDark text-brandCream border border-black text-[10px] font-extrabold px-3 py-1 uppercase tracking-wider">
+                Smooth AF ✨
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-black text-brandDark mb-3">Laser Hair Reduction</h3>
+              <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+                Ditch the razor completely. Safest advanced triple-wavelength cooling lasers targeting even the finest follicles with absolute zero pain.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#book" class="inline-flex items-center gap-2 font-extrabold text-sm text-brandDark hover:text-brandOrange transition-colors">
+              Explore Treatment <i class="fa-solid fa-arrow-right-long text-brandOrange"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5: Acne Scar Masterclass -->
+        <div class="bg-brandCream border-2 border-black shadow-brutalist hover:shadow-brutalist-orange transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <!-- Image Frame -->
+            <div class="relative h-48 bg-gray-200 border-b-2 border-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=600" alt="Acne Scar Concept" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              <span class="absolute top-3 right-3 bg-brandDark text-brandCream border border-black text-[10px] font-extrabold px-3 py-1 uppercase tracking-wider">
+                Pore Refining
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-black text-brandDark mb-3">Acne Scar Eraser & Peels</h3>
+              <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+                Erase hyperpigmentation, deep pits, and active flare-ups. Customized medical peels combined with micro-needling & advanced skin-healing protocols.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#book" class="inline-flex items-center gap-2 font-extrabold text-sm text-brandDark hover:text-brandOrange transition-colors">
+              Explore Treatment <i class="fa-solid fa-arrow-right-long text-brandOrange"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6: Skin Whitening & Glutathione -->
+        <div class="bg-brandCream border-2 border-black shadow-brutalist hover:shadow-brutalist-orange transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <!-- Image Frame -->
+            <div class="relative h-48 bg-gray-200 border-b-2 border-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=600" alt="Skin Brightening Concept" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+              <span class="absolute top-3 right-3 bg-brandDark text-brandCream border border-black text-[10px] font-extrabold px-3 py-1 uppercase tracking-wider">
+                Ivory Complexion
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-black text-brandDark mb-3">Complexion Brightening</h3>
+              <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+                Revitalize dull skin with IV drips, custom peel formulations, and laser toning to restore uniform brightness and clear glass skin.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#book" class="inline-flex items-center gap-2 font-extrabold text-sm text-brandDark hover:text-brandOrange transition-colors">
+              Explore Treatment <i class="fa-solid fa-arrow-right-long text-brandOrange"></i>
+            </a>
           </div>
         </div>
 
@@ -342,192 +408,427 @@
     </div>
   </section>
 
-  <!-- TEAM SECTION (OUR EXPERTS) -->
-  <section id="team" class="py-20 px-4 bg-brandCream">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-brandOrange font-extrabold uppercase tracking-widest text-sm bg-brandOrange/10 px-4 py-1.5 rounded-full">Behind The Magic</span>
-        <h2 class="font-syne text-4xl sm:text-5xl font-extrabold mt-3 text-brandDark">The Elite Cosmetologist Squad</h2>
-        <p class="text-zinc-600 mt-4 text-lg">India's finest plastic surgery brains and cosmetic masterminds working together to safely sculpt your face and body.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-        
-        <!-- Doctor Card 1 -->
-        <div class="bg-white p-6 rounded-2xl brutalist-border relative group overflow-hidden">
-          <div class="aspect-square w-full bg-zinc-100 rounded-xl mb-6 overflow-hidden relative">
-            <!-- Stylized Minimalist Doctor Illustration Placeholder -->
-            <div class="absolute inset-0 bg-gradient-to-tr from-brandOrange/30 to-brandDark/20 flex items-center justify-center">
-              <span class="text-5xl font-black text-white/50 font-syne">DR. NS</span>
-            </div>
-          </div>
-          <h3 class="font-syne text-2xl font-bold mb-1 text-brandDark">Dr. Naveen Somia</h3>
-          <p class="text-brandOrange font-extrabold text-sm uppercase mb-4">Consultant Plastic Surgeon & Academic Lead</p>
-          <p class="text-zinc-600 text-sm leading-relaxed mb-4">
-            Renowned for his precision surgical eye, academic publications, and training global experts. He brings premium clinical excellence to everyday aesthetic procedures.
+  <!-- Why Us Section (Trendy brutalist design elements) -->
+  <section id="why-us" class="py-16 md:py-24 bg-brandDark text-brandCream relative overflow-hidden border-b-4 border-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Big Typography -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="bg-brandOrange text-brandDark text-xs font-black px-4 py-2 uppercase tracking-widest inline-block border-2 border-brandCream">
+            No Cap, Pure Medical Quality
+          </span>
+          <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black leading-tight text-glow">
+            Why Dr. Sculpt is different.
+          </h2>
+          <p class="text-brandCream/80 text-base leading-relaxed">
+            We don’t believe in cookie-cutter beauty. We custom contour based on your unique facial structure, skin type, and specific long-term wellness goals.
           </p>
-          <span class="inline-block bg-zinc-100 px-3 py-1 rounded-full text-xs font-bold text-zinc-700">🎓 Plastic Surgery Pioneer</span>
+          
+          <!-- Trendy sticker element -->
+          <div class="bg-brandCream text-brandDark p-5 border-4 border-brandOrange rotate-1 max-w-sm inline-block shadow-[6px_6px_0px_0px_#ffffff]">
+            <p class="font-extrabold text-xs tracking-wider uppercase mb-1 text-brandOrange">⭐ Bangalore's Best Glow-Up Hub ⭐</p>
+            <p class="text-xs font-semibold text-brandDark/80">Backed by award-winning surgeons and zero-compromise FDA guidelines.</p>
+          </div>
         </div>
 
-        <!-- Doctor Card 2 -->
-        <div class="bg-white p-6 rounded-2xl brutalist-border relative group overflow-hidden">
-          <div class="aspect-square w-full bg-zinc-100 rounded-xl mb-6 overflow-hidden relative">
-            <div class="absolute inset-0 bg-gradient-to-tr from-brandOrange/30 to-brandDark/20 flex items-center justify-center">
-              <span class="text-5xl font-black text-white/50 font-syne">DR. SC</span>
-            </div>
-          </div>
-          <h3 class="font-syne text-2xl font-bold mb-1 text-brandDark">Dr. Sculpt Specialist Team</h3>
-          <p class="text-brandOrange font-extrabold text-sm uppercase mb-4">Expert Cosmetologists & Aesthetic Dermatologists</p>
-          <p class="text-zinc-600 text-sm leading-relaxed mb-4">
-            Our certified aesthetic dermatologists excel in customized laser therapies, modern anti-aging, injectable sculpts, and complex hair revival treatments.
-          </p>
-          <span class="inline-block bg-zinc-100 px-3 py-1 rounded-full text-xs font-bold text-zinc-700">⚡️ Laser & Injectables Masters</span>
-        </div>
-
-        <!-- Call to Action Card -->
-        <div class="bg-zinc-900 p-8 rounded-2xl border-4 border-brandOrange flex flex-col justify-between text-brandCream">
-          <div class="space-y-4">
-            <div class="text-brandOrange font-extrabold text-xs uppercase tracking-widest">Custom Consultation</div>
-            <h3 class="font-syne text-3xl font-black leading-tight">Get Your Face & Hair Assessed Safely</h3>
-            <p class="text-zinc-400 text-sm leading-relaxed">
-              Meet Dr. Naveen Somia and our clinical squad. Explore what treatments can boost your skin texture and natural volume effortlessly.
+        <!-- Right Visual USP Cards Grid -->
+        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+          
+          <div class="bg-brandMutedDark p-6 border-2 border-brandCream/20 rounded-none relative overflow-hidden group hover:border-brandOrange transition-all duration-300">
+            <div class="text-brandOrange text-3xl mb-4"><i class="fa-solid fa-microscope"></i></div>
+            <h4 class="text-lg font-bold mb-2">Advanced Diagnosis</h4>
+            <p class="text-brandCream/70 text-xs leading-relaxed">
+              We inspect beneath the epidermis layer using digital imaging to isolate precise root issues.
             </p>
           </div>
-          <div class="mt-8">
-            <a href="#consultation" class="block text-center bg-brandOrange text-brandDark font-bold py-4 rounded-xl border border-brandDark hover:bg-brandCream transition-colors uppercase tracking-wider">
-              Book Face mapping
-            </a>
-          </div>
-        </div>
 
+          <div class="bg-brandMutedDark p-6 border-2 border-brandCream/20 rounded-none relative overflow-hidden group hover:border-brandOrange transition-all duration-300">
+            <div class="text-brandOrange text-3xl mb-4"><i class="fa-solid fa-user-doctor"></i></div>
+            <h4 class="text-lg font-bold mb-2">Experienced Hands Only</h4>
+            <p class="text-brandCream/70 text-xs leading-relaxed">
+              No trainees. Every procedure is guided and executed directly by premium aesthetic dermatologists.
+            </p>
+          </div>
+
+          <div class="bg-brandMutedDark p-6 border-2 border-brandCream/20 rounded-none relative overflow-hidden group hover:border-brandOrange transition-all duration-300">
+            <div class="text-brandOrange text-3xl mb-4"><i class="fa-solid fa-circle-check"></i></div>
+            <h4 class="text-lg font-bold mb-2">Safe FDA-Approved Protocols</h4>
+            <p class="text-brandCream/70 text-xs leading-relaxed">
+              We use global premium machinery & brands like Soprano, Allergan, and HydraFacial Luxe.
+            </p>
+          </div>
+
+          <div class="bg-brandMutedDark p-6 border-2 border-brandCream/20 rounded-none relative overflow-hidden group hover:border-brandOrange transition-all duration-300">
+            <div class="text-brandOrange text-3xl mb-4"><i class="fa-solid fa-mug-hot"></i></div>
+            <h4 class="text-lg font-bold mb-2">Premium Ambience</h4>
+            <p class="text-brandCream/70 text-xs leading-relaxed">
+              Enjoy relaxing aesthetic lounges designed for absolute modern-day aesthetic vibe and comfort.
+            </p>
+          </div>
+
+        </div>
       </div>
+
     </div>
   </section>
 
-  <!-- TESTIMONIALS (GLOW UPS REAL LIFE) -->
-  <section id="testimonials" class="py-20 px-4 bg-zinc-100">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-brandOrange font-extrabold uppercase tracking-widest text-sm bg-brandOrange/10 px-4 py-1.5 rounded-full">No Cap, Just Results</span>
-        <h2 class="font-syne text-4xl sm:text-5xl font-extrabold mt-3 text-brandDark">Real Glow-Ups</h2>
-        <p class="text-zinc-600 mt-4">Check out these verified transformations from people who decided to take control of their skin, hair, and vibe.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <!-- Review 1 -->
-        <div class="bg-white p-8 rounded-2xl brutalist-border relative flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex text-brandOrange font-bold text-lg">★★★★★</div>
-            <p class="text-zinc-700 italic">"I had stubborn dark circles and acne scars that wouldn't budge with expensive serums. Dr. Sculpt suggested a custom laser toning combined with Hydrafacials. My skin is literally glass now! Best aesthetic clinic in Bangalore hands down!"</p>
-          </div>
-          <div class="flex items-center gap-4 mt-8 border-t border-zinc-100 pt-4">
-            <div class="h-10 w-10 bg-zinc-200 rounded-full flex items-center justify-center font-black text-sm text-brandDark">A</div>
-            <div>
-              <p class="font-bold text-brandDark">Anjali R., 24</p>
-              <p class="text-xs text-brandOrange font-extrabold uppercase">Skin Resurfacing Customer</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="bg-white p-8 rounded-2xl brutalist-border relative flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex text-brandOrange font-bold text-lg">★★★★★</div>
-            <p class="text-zinc-700 italic">"My hair thinning was stressing me out daily. The GFC hair therapy here works like absolute magic. It's been 4 sessions and my hair volume is back, and my scalp looks so healthy. The staff makes you feel totally at ease."</p>
-          </div>
-          <div class="flex items-center gap-4 mt-8 border-t border-zinc-100 pt-4">
-            <div class="h-10 w-10 bg-zinc-200 rounded-full flex items-center justify-center font-black text-sm text-brandDark">R</div>
-            <div>
-              <p class="font-bold text-brandDark">Rahul K., 27</p>
-              <p class="text-xs text-brandOrange font-extrabold uppercase">GFC Hair Revival Customer</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="bg-white p-8 rounded-2xl brutalist-border relative flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex text-brandOrange font-bold text-lg">★★★★★</div>
-            <p class="text-zinc-700 italic">"Absolutely snatched jawline achieved! I was super hesitant about fillers but Dr. Sculpt team explained everything transparently. The results are incredibly subtle but made such a huge difference! Perfect main character vibe."</p>
-          </div>
-          <div class="flex items-center gap-4 mt-8 border-t border-zinc-100 pt-4">
-            <div class="h-10 w-10 bg-zinc-200 rounded-full flex items-center justify-center font-black text-sm text-brandDark">K</div>
-            <div>
-              <p class="font-bold text-brandDark">Kriti S., 25</p>
-              <p class="text-xs text-brandOrange font-extrabold uppercase">Jawline Sculpting Customer</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- THE COMPLETE DENSE GEN-Z FOOTER -->
-  <footer class="bg-brandLightDark text-brandCream pt-20 pb-8 border-t-4 border-brandOrange">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+  <!-- Meet the Doctors Squad (Dr. Sculpt Core Team) -->
+  <section id="doctors" class="py-16 md:py-24 bg-brandCream border-b-4 border-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Column 1: Brand & Contact -->
-      <div class="space-y-6">
-        <img src="../assets/logo.png" alt="Dr. Sculpt Logo" class="h-14 w-auto object-contain bg-brandCream p-2 rounded-xl">
-        <p class="text-zinc-400 text-sm leading-relaxed">
-          Bangalore's finest modern aesthetic collective. Redefining hair, skin, and contouring treatments through cutting-edge science and flawless modern vision.
+      <!-- Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brandDark font-extrabold uppercase text-xs tracking-widest bg-brandOrange px-4 py-1.5 rounded-full inline-block mb-3 border border-black shadow-brutalist-sm">The Elite Squad</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-black text-brandDark">
+          Meet Our Certified Artists
+        </h2>
+        <p class="text-brandDark/70 mt-3 font-semibold">
+          World-class dermatologists, surgeons, & skincare advocates who treat aesthetics like high art.
         </p>
-        <div class="space-y-2 text-sm font-semibold">
-          <a href="tel:8452994663" class="flex items-center gap-2 text-brandOrange hover:underline">
-            📞 Call/WhatsApp: 8452994663
-          </a>
-          <p class="text-zinc-300">
-            📍 2nd Floor, Above HDFC Bank, Koramangala 80 Feet Rd, Bangalore, India
+      </div>
+
+      <!-- Team Cards Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        
+        <!-- Doctor 1: Dr. Vikranth Suresh -->
+        <div class="bg-white border-4 border-black shadow-brutalist hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200">
+          <div class="h-80 bg-gray-200 border-b-4 border-black relative overflow-hidden">
+            <!-- Custom Placeholder illustrating professional premium headshot -->
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=600" alt="Dr. Vikranth Suresh - Chief Aesthetic Surgeon" class="w-full h-full object-cover object-top">
+            <div class="absolute bottom-3 left-3 bg-brandOrange text-brandDark border-2 border-black font-extrabold px-3 py-1 text-xs uppercase">
+              Founder & Chief Surgeon
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-black text-brandDark">Dr. Vikranth Suresh</h3>
+            <p class="text-brandOrange font-extrabold text-xs uppercase tracking-widest mb-4">Hair Transplant Specialist & Cosmetologist</p>
+            <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+              A pioneer in modern FUE Hair Transplant and advanced cosmetic injectables. Known for tailoring customized transformations with precision.
+            </p>
+            <div class="border-t border-black/10 pt-4 flex flex-wrap gap-2">
+              <span class="bg-brandCream px-3 py-1 border border-black/20 text-[10px] font-bold uppercase">12+ Yrs Exp</span>
+              <span class="bg-brandCream px-3 py-1 border border-black/20 text-[10px] font-bold uppercase">10,000+ Surgeries</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2: Dr. Sunitha -->
+        <div class="bg-white border-4 border-black shadow-brutalist hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200">
+          <div class="h-80 bg-gray-200 border-b-4 border-black relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1594824813573-246434e33963?auto=format&fit=crop&q=80&w=600" alt="Dr. Sunitha - Senior Aesthetic Dermatologist" class="w-full h-full object-cover object-top">
+            <div class="absolute bottom-3 left-3 bg-brandOrange text-brandDark border-2 border-black font-extrabold px-3 py-1 text-xs uppercase">
+              Senior Consultant
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-black text-brandDark">Dr. Sunitha S.</h3>
+            <p class="text-brandOrange font-extrabold text-xs uppercase tracking-widest mb-4">Aesthetic Dermatologist</p>
+            <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+              Expert in non-invasive skin tightening, chemical peels, hyperpigmentation solutions, and customized premium Hydrafacials.
+            </p>
+            <div class="border-t border-black/10 pt-4 flex flex-wrap gap-2">
+              <span class="bg-brandCream px-3 py-1 border border-black/20 text-[10px] font-bold uppercase">8+ Yrs Exp</span>
+              <span class="bg-brandCream px-3 py-1 border border-black/20 text-[10px] font-bold uppercase">Skin Specialist</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3: Dr. Nitesh -->
+        <div class="bg-white border-4 border-black shadow-brutalist hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200">
+          <div class="h-80 bg-gray-200 border-b-4 border-black relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600" alt="Dr. Nitesh - Trichology Specialist" class="w-full h-full object-cover object-top">
+            <div class="absolute bottom-3 left-3 bg-brandOrange text-brandDark border-2 border-black font-extrabold px-3 py-1 text-xs uppercase">
+              Trichologist
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-black text-brandDark">Dr. Nitesh R.</h3>
+            <p class="text-brandOrange font-extrabold text-xs uppercase tracking-widest mb-4">Trichologist & Laser Expert</p>
+            <p class="text-brandDark/70 text-sm leading-relaxed mb-4">
+              Specialized in hair-growth therapy, platelet-rich therapies, and high-precision laser hair reduction treatments for all Indian skin types.
+            </p>
+            <div class="border-t border-black/10 pt-4 flex flex-wrap gap-2">
+              <span class="bg-brandCream px-3 py-1 border border-black/20 text-[10px] font-bold uppercase">6+ Yrs Exp</span>
+              <span class="bg-brandCream px-3 py-1 border border-black/20 text-[10px] font-bold uppercase">Laser Certified</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Super Hype Testimonials Section -->
+  <section id="reviews" class="py-16 md:py-24 bg-brandDark text-brandCream border-b-4 border-black overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="bg-brandOrange text-brandDark font-extrabold uppercase text-xs tracking-widest px-4 py-1.5 rounded-full inline-block mb-3 border-2 border-brandCream">
+          Client Slays / Real Glow Ups
+        </span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-black text-white text-glow">
+          Tested & Approved by the Fam
+        </h2>
+      </div>
+
+      <!-- Grid of Brutalist Styled Review Cards -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-brandMutedDark p-6 border-2 border-brandOrange relative flex flex-col justify-between">
+          <div class="absolute -top-3 -right-3 bg-brandOrange text-brandDark font-extrabold text-[10px] px-2 py-0.5 uppercase tracking-wide rotate-3">
+            Verified Hair Glow
+          </div>
+          <div class="space-y-4">
+            <div class="flex text-brandOrange gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="italic text-sm text-brandCream/90 leading-relaxed">
+              "Got my FUE hair transplant done with Dr. Vikranth. No cap, the density is unreal. Everyone at work literally thought I just grew hair naturally. The squad at Dr. Sculpt is amazing!"
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brandCream/15 mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 bg-brandCream rounded-full text-brandDark font-black flex items-center justify-center text-xs border border-brandOrange">
+              AK
+            </div>
+            <div>
+              <h5 class="text-sm font-bold text-white">Amit Kumar</h5>
+              <span class="text-[10px] text-brandOrange font-bold uppercase tracking-wider">Bangalore Resident</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-brandMutedDark p-6 border-2 border-brandOrange relative flex flex-col justify-between">
+          <div class="absolute -top-3 -right-3 bg-brandOrange text-brandDark font-extrabold text-[10px] px-2 py-0.5 uppercase tracking-wide rotate-3">
+            Skin Glow-Up ✨
+          </div>
+          <div class="space-y-4">
+            <div class="flex text-brandOrange gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="italic text-sm text-brandCream/90 leading-relaxed">
+              "Literally the best Hydrafacial Luxe experience in Bangalore! My skin felt super glass-like and smooth. Absolutely no redness. Love the vibes of the clinic! Highly recommend!"
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brandCream/15 mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 bg-brandCream rounded-full text-brandDark font-black flex items-center justify-center text-xs border border-brandOrange">
+              PP
+            </div>
+            <div>
+              <h5 class="text-sm font-bold text-white">Prisha Patel</h5>
+              <span class="text-[10px] text-brandOrange font-bold uppercase tracking-wider">Tech Lead</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-brandMutedDark p-6 border-2 border-brandOrange relative flex flex-col justify-between">
+          <div class="absolute -top-3 -right-3 bg-brandOrange text-brandDark font-extrabold text-[10px] px-2 py-0.5 uppercase tracking-wide rotate-3">
+            Zero Hair Struggle 💯
+          </div>
+          <div class="space-y-4">
+            <div class="flex text-brandOrange gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="italic text-sm text-brandCream/90 leading-relaxed">
+              "Highly professional staff. Completed 4 sessions of Laser Hair Reduction and results are spectacular. Fully painless and extremely comfortable. Definitely worth every single rupee."
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brandCream/15 mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 bg-brandCream rounded-full text-brandDark font-black flex items-center justify-center text-xs border border-brandOrange">
+              RD
+            </div>
+            <div>
+              <h5 class="text-sm font-bold text-white">Rohan Das</h5>
+              <span class="text-[10px] text-brandOrange font-bold uppercase tracking-wider">Aesthetic Enthusiast</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive FAQ Section -->
+  <section class="py-16 md:py-24 bg-white border-b-4 border-black">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <!-- Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="font-serif text-3xl sm:text-4xl font-black text-brandDark">
+          Frequently Asked Realness
+        </h2>
+        <p class="text-brandDark/70 mt-2 font-semibold">Quick answers to your ultimate skin & hair curiosities.</p>
+      </div>
+
+      <!-- FAQ Accordions -->
+      <div class="space-y-4">
+        
+        <div class="border-2 border-black bg-brandCream">
+          <button class="w-full flex items-center justify-between p-5 text-left font-extrabold text-sm sm:text-base text-brandDark focus:outline-none" onclick="toggleFAQ(this)">
+            <span>Is Hair Transplant permanent & painless?</span>
+            <i class="fa-solid fa-chevron-down text-brandOrange transition-transform duration-200"></i>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-300">
+            <div class="p-5 pt-0 text-xs sm:text-sm text-brandDark/80 border-t border-black/10 leading-relaxed">
+              Yes, absolutely! Since the donor hair is extracted from areas resistant to hormonal balding, it stays forever. We perform the procedure under highly advanced local anesthesia, ensuring 100% painless comfort.
+            </div>
+          </div>
+        </div>
+
+        <div class="border-2 border-black bg-brandCream">
+          <button class="w-full flex items-center justify-between p-5 text-left font-extrabold text-sm sm:text-base text-brandDark focus:outline-none" onclick="toggleFAQ(this)">
+            <span>Is Laser Hair Reduction safe for sensitive skin?</span>
+            <i class="fa-solid fa-chevron-down text-brandOrange transition-transform duration-200"></i>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-300">
+            <div class="p-5 pt-0 text-xs sm:text-sm text-brandDark/80 border-t border-black/10 leading-relaxed">
+              Yes! Our state-of-the-art triple-wavelength cooling lasers are designed specifically to customize depth based on melanin levels, preventing burns and making it safe even for ultra-sensitive skin types.
+            </div>
+          </div>
+        </div>
+
+        <div class="border-2 border-black bg-brandCream">
+          <button class="w-full flex items-center justify-between p-5 text-left font-extrabold text-sm sm:text-base text-brandDark focus:outline-none" onclick="toggleFAQ(this)">
+            <span>How many sessions of Hydra Glow do I need for visible results?</span>
+            <i class="fa-solid fa-chevron-down text-brandOrange transition-transform duration-200"></i>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-300">
+            <div class="p-5 pt-0 text-xs sm:text-sm text-brandDark/80 border-t border-black/10 leading-relaxed">
+              You will witness an immediate, radiant shine right after your first session. However, to maintain long-lasting skin-barrier health, we recommend scheduled sessions once every 4-6 weeks.
+            </div>
+          </div>
+        </div>
+
+        <div class="border-2 border-black bg-brandCream">
+          <button class="w-full flex items-center justify-between p-5 text-left font-extrabold text-sm sm:text-base text-brandDark focus:outline-none" onclick="toggleFAQ(this)">
+            <span>How do I secure an instant free consult slot?</span>
+            <i class="fa-solid fa-chevron-down text-brandOrange transition-transform duration-200"></i>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-300">
+            <div class="p-5 pt-0 text-xs sm:text-sm text-brandDark/80 border-t border-black/10 leading-relaxed">
+              Simply scroll to our "Glow Up Hub" booking form at the top or bottom of this page, fill in your details, and press submit. Our lead consultant will WhatsApp you immediately to schedule your premium slot!
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Impact CTA & Final Booking -->
+  <section class="py-16 bg-brandOrange text-brandDark relative border-b-4 border-black">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-6">
+      <span class="bg-brandDark text-brandCream text-xs font-black px-4 py-1.5 rounded-full inline-block border border-black shadow-brutalist-sm uppercase">
+        Slay All Day ✨
+      </span>
+      <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black max-w-3xl mx-auto">
+        Ready for your ultimate Glow Up?
+      </h2>
+      <p class="text-sm sm:text-base font-bold text-brandDark/80 max-w-xl mx-auto">
+        Slots book fast! Experience high-precision cosmetology from Bangalore's hand-picked clinical experts.
+      </p>
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#book" class="w-full sm:w-auto bg-brandDark text-brandCream hover:bg-brandCream hover:text-brandDark font-black px-8 py-4 rounded-none border-2 border-black shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150 uppercase tracking-widest text-sm">
+          Claim Free Consultation ⚡
+        </a>
+        <a href="tel:8452994663" class="w-full sm:w-auto bg-white text-brandDark hover:bg-brandDark hover:text-brandCream font-black px-8 py-4 rounded-none border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150 uppercase tracking-widest text-sm">
+          Call Us: 8452994663
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footers with Complete Map, Treatments, and Quick Links -->
+  <footer class="bg-brandDark text-brandCream py-16 border-t-4 border-black relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
+        
+        <!-- Col 1: About & Info -->
+        <div class="lg:col-span-4 space-y-6">
+          <img src="../assets/logo.png" alt="Dr. Sculpt Logo" class="h-16 w-auto bg-brandCream p-2 border-2 border-brandOrange">
+          <p class="text-xs text-brandCream/70 leading-relaxed max-w-sm">
+            Dr. Sculpt Clinic is Bangalore's premier avant-garde medical-aesthetic hub. We merge global US-FDA technology with artistic medical craftsmanship to design precise transformations.
+          </p>
+          <div class="space-y-2 text-xs font-semibold">
+            <p><i class="fa-solid fa-location-dot text-brandOrange mr-2"></i> No 43, 2nd Cross, 80 Feet Rd, RMV 2nd Stage, Bangalore, KA - 560094</p>
+            <p><i class="fa-solid fa-phone text-brandOrange mr-2"></i> Hotline: <a href="tel:8452994663" class="underline hover:text-brandOrange">8452994663</a></p>
+            <p><i class="fa-solid fa-envelope text-brandOrange mr-2"></i> Email: <span class="underline">info@drsculptclinic.com</span></p>
+          </div>
+        </div>
+
+        <!-- Col 2: High-Demand Treatments Menu -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="font-serif text-lg font-bold text-brandOrange">Treatments</h4>
+          <ul class="space-y-2 text-xs font-semibold text-brandCream/80">
+            <li><a href="#treatments" class="hover:text-brandOrange transition-colors">FUE Hair Restoration</a></li>
+            <li><a href="#treatments" class="hover:text-brandOrange transition-colors">Botox & Advanced Fillers</a></li>
+            <li><a href="#treatments" class="hover:text-brandOrange transition-colors">Hydra-Luxe Facial Therapy</a></li>
+            <li><a href="#treatments" class="hover:text-brandOrange transition-colors">Laser Hair Reduction</a></li>
+            <li><a href="#treatments" class="hover:text-brandOrange transition-colors">Acne Scar Extraction & Peels</a></li>
+            <li><a href="#treatments" class="hover:text-brandOrange transition-colors">Complexion Toning & Brightening</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="font-serif text-lg font-bold text-brandOrange">Quick Links</h4>
+          <ul class="space-y-2 text-xs font-semibold text-brandCream/80">
+            <li><a href="#" class="hover:text-brandOrange transition-colors">Back to Top</a></li>
+            <li><a href="#why-us" class="hover:text-brandOrange transition-colors">Why Choose Us</a></li>
+            <li><a href="#doctors" class="hover:text-brandOrange transition-colors">Our Professional Team</a></li>
+            <li><a href="#reviews" class="hover:text-brandOrange transition-colors">Real Reviews</a></li>
+            <li><a href="#book" class="hover:text-brandOrange transition-colors">Schedule Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Map Integration Placeholder with styled interactive container -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="font-serif text-lg font-bold text-brandOrange">Our Location</h4>
+          <div class="border-2 border-brandOrange h-40 bg-brandMutedDark overflow-hidden relative">
+            <!-- Interactive Simulated Map Overlay -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d3887.050478644558!2d77.5752946!3d13.0318536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17935fcc2d4d%3A0xe7f92023d8c11aa2!2sDr.%20Sculpt%20Aesthetic%20Clinic!5e0!3m2!1sen!2sin!4v1689100000000!5m2!1sen!2sin" 
+              class="w-full h-full filter invert grayscale opacity-80 border-0"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+          <p class="text-[10px] text-brandCream/50">
+            📍 Conveniently located on 80 Feet Road, RMV 2nd Stage. Ample private parking space available.
           </p>
         </div>
+
       </div>
 
-      <!-- Column 2: The Treatment Menu -->
-      <div>
-        <h4 class="font-syne text-lg font-bold text-white mb-6 border-b border-zinc-800 pb-2 uppercase tracking-wide">Treatment Menu</h4>
-        <ul class="space-y-3 text-sm text-zinc-400 font-semibold">
-          <li><a href="#treatments" class="hover:text-brandOrange transition-colors">⚡️ Hydrafacial & Skin Luxe</a></li>
-          <li><a href="#treatments" class="hover:text-brandOrange transition-colors">⚡️ Carbon Hollywood Laser Peel</a></li>
-          <li><a href="#treatments" class="hover:text-brandOrange transition-colors">⚡️ Advanced GFC Hair Growth</a></li>
-          <li><a href="#treatments" class="hover:text-brandOrange transition-colors">⚡️ Snatched Jawline Fillers</a></li>
-          <li><a href="#treatments" class="hover:text-brandOrange transition-colors">⚡️ Baby Botox & Fine-line Smoothing</a></li>
-          <li><a href="#treatments" class="hover:text-brandOrange transition-colors">⚡️ Nonsurgical Body Contouring</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3: Quick Navigation -->
-      <div>
-        <h4 class="font-syne text-lg font-bold text-white mb-6 border-b border-zinc-800 pb-2 uppercase tracking-wide">Quick Links</h4>
-        <ul class="space-y-3 text-sm text-zinc-400 font-semibold">
-          <li><a href="#" class="hover:text-brandOrange transition-colors">Back To Top</a></li>
-          <li><a href="#treatments" class="hover:text-brandOrange transition-colors">Our Treatments</a></li>
-          <li><a href="#team" class="hover:text-brandOrange transition-colors">The Expert Board</a></li>
-          <li><a href="#about" class="hover:text-brandOrange transition-colors">Why Choose Dr. Sculpt</a></li>
-          <li><a href="#testimonials" class="hover:text-brandOrange transition-colors">Success Transformations</a></li>
-          <li><a href="#consultation" class="hover:text-brandOrange transition-colors">Book My Consultation</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 4: Maps Embed -->
-      <div>
-        <h4 class="font-syne text-lg font-bold text-white mb-6 border-b border-zinc-800 pb-2 uppercase tracking-wide">Find Our HQ</h4>
-        <div class="rounded-xl overflow-hidden border-2 border-brandOrange h-48">
-          <!-- Interactive Map Placeholder / Embed -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7511440409744!2d77.622533!3d12.9237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae148cb09bf517%3s0x3bae148cb09bf517!2sDr.%20Sculpt%20Aesthetic%20Clinic!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-            class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- Copyright & Bottom Disclaimers -->
+      <div class="border-t border-brandCream/15 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-brandCream/50 font-semibold gap-4">
+        <p>© 2023 Echelon Hospital / Dr. Sculpt Aesthetic Clinic. All Rights Reserved. Sculpt Clinic Campaign.</p>
+        <div class="flex gap-4">
+          <span class="hover:text-white transition-colors">Privacy Policy</span>
+          <span>●</span>
+          <span class="hover:text-white transition-colors">Terms of Service</span>
         </div>
       </div>
 
-    </div>
-
-    <!-- Bottom Legal Bar -->
-    <div class="max-w-7xl mx-auto px-4 pt-8 border-t border-zinc-800 text-center text-xs text-zinc-500 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p>© 2024 Dr. Sculpt Aesthetic Clinic. Operated in alliance with Echelon Hospital. All rights reserved.</p>
-      <p>Disclaimer: Results may vary by individual. Surgical results depend on specific clinical evaluation.</p>
     </div>
   </footer>
 
+  <!-- Javascript for Accordeon and interactive styling -->
+  <script>
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      
+      if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+        content.style.maxHeight = '0px';
+        icon.classList.remove('rotate-180');
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.classList.add('rotate-180');
+      }
+    }
+  </script>
 </body>
 </html>
