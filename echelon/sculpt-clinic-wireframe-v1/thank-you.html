@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Dr. Sculpt Aesthetic Clinic</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sculptDark: '#2a1804',
+            sculptOrange: '#fe8e1b',
+            sculptTaupe: '#7b7965',
+            sculptLight: '#fcfbfa'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-sculptLight text-sculptDark font-sans selection:bg-sculptOrange selection:text-white h-screen flex flex-col justify-between">
+
+  <!-- Top Banner -->
+  <div class="bg-sculptDark text-sculptLight text-xs tracking-widest py-2 px-4 text-center">
+    <span>EXPERIENCE WORLD-CLASS AESTHETICS &bull; CALL TODAY: <a href="tel:9538573888" class="text-sculptOrange hover:underline font-semibold">9538573888</a></span>
+  </div>
+
+  <!-- Thank You Content -->
+  <main class="max-w-2xl mx-auto px-4 text-center my-auto py-12">
+    <div class="flex justify-center mb-8">
+      <img src="../assets/logo.png" alt="Dr. Sculpt Aesthetic Clinic Logo" class="h-24 w-auto object-contain" />
+    </div>
+    
+    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-sculptDark/5 text-sculptOrange mb-6">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </div>
+
+    <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-sculptDark mb-4 leading-tight">
+      Thank You <br />
+      <span class="italic font-light text-sculptTaupe">For Requesting a Consultation</span>
+    </h1>
+    
+    <p class="text-base text-sculptDark/80 leading-relaxed max-w-md mx-auto mb-8">
+      We have safely received your details. One of our dedicated medical concierge advisors will reach out to you shortly to organize your private aesthetic assessment.
+    </p>
+
+    <div class="space-y-3">
+      <span class="text-xs uppercase tracking-widest text-sculptTaupe block">Need immediate scheduling assistance?</span>
+      <a href="tel:9538573888" class="inline-flex items-center justify-center bg-sculptDark text-white hover:bg-sculptOrange px-8 py-4 uppercase tracking-widest text-xs font-semibold transition-all duration-300 shadow-md">
+        Call: 9538573888
+      </a>
+    </div>
+
+    <div class="mt-8">
+      <a href="index.html" class="text-xs uppercase tracking-widest text-sculptOrange font-semibold hover:underline">&larr; Return to Homepage</a>
+    </div>
+  </main>
+
+  <!-- Simple Footer -->
+  <footer class="bg-sculptDark text-sculptLight/60 text-center py-6 text-xs border-t border-sculptTaupe/20">
+    <p>&copy; 2025 Dr. Sculpt Aesthetic Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
