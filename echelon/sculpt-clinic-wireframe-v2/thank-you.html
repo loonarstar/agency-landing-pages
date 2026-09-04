@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Dr. Sculpt Aesthetic Clinic</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght=0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sculpt: {
+              orange: '#fe8e1b',
+              muted: '#7b7965',
+              dark: '#2a1804',
+              light: '#fdfbf7'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-sculpt-light text-sculpt-dark font-sans h-screen flex flex-col justify-between">
+
+  <!-- Luxury Navigation Bar (Static Logo display) -->
+  <nav class="bg-white/95 border-b border-sculpt-muted/20 py-4 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 flex justify-center">
+      <img src="../assets/logo.png" alt="Dr. Sculpt Aesthetic Clinic Logo" class="h-20 w-auto object-contain">
+    </div>
+  </nav>
+
+  <!-- Main Thank You Card Content -->
+  <main class="max-w-xl mx-auto px-6 text-center py-16 flex-grow flex flex-col justify-center items-center">
+    <div class="bg-white p-8 md:p-12 shadow-2xl border-t-4 border-sculpt-orange space-y-6">
+      <!-- Success Icon -->
+      <div class="w-16 h-16 bg-sculpt-orange/10 border border-sculpt-orange/30 text-sculpt-orange rounded-full flex items-center justify-center mx-auto text-2xl animate-bounce">
+        <i class="fa-solid fa-envelope-open-text"></i>
+      </div>
+      
+      <h1 class="font-serif text-3xl md:text-4xl text-sculpt-dark">Request Received Successfully</h1>
+      
+      <p class="text-xs md:text-sm text-sculpt-muted leading-relaxed font-light">
+        Your journey to exquisite, high-definition cosmetic refinement has commenced. A dedicated premium aesthetic consultant will review your specifications and contact you privately via phone or email within the next 2–4 clinical hours.
+      </p>
+
+      <div class="border-t border-b border-sculpt-muted/20 py-4 space-y-1">
+        <p class="text-[10px] uppercase text-sculpt-muted tracking-widest">For Urgent Consultations:</p>
+        <a href="tel:9538573888" class="text-lg font-bold text-sculpt-dark hover:text-sculpt-orange transition-colors flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone-volume text-sculpt-orange"></i> +91 95385 73888
+        </a>
+      </div>
+
+      <a href="index.html" class="inline-block bg-sculpt-dark hover:bg-sculpt-orange text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider transition-all duration-300">
+        Return to Main Website
+      </a>
+    </div>
+  </main>
+
+  <!-- Minimum footer bar -->
+  <footer class="bg-sculpt-dark text-white py-6 text-center text-xs border-t border-sculpt-muted/20">
+    <p class="text-gray-400 font-light">© 2024 Dr. Sculpt Aesthetic Clinic. All confidential files secure.</p>
+  </footer>
+
+</body>
+</html>
